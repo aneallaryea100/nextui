@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Cookies from "js-cookie";
 
 function LoginPage() {
     const [userName, setUserName] = useState("");
@@ -35,6 +36,15 @@ function LoginPage() {
             if(response.ok) {
                 //login successful, handle the response
                 const data = await response.json();
+
+                // Store the access token in a cookie
+                 Cookies.set("accessToken", data.accessToken, {
+                     expires: 7, 
+                     secure: true, 
+                     sameSite: "strict", 
+                     httpOnly: true 
+                    });
+
                 console.log(data);
             } else {
                 //login failed
