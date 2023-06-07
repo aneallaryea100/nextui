@@ -85,7 +85,7 @@ function LoginPage() {
                     type="text"
                     id="username"
                     placeholder='Enter Username'
-                    autocomplete="off"
+                    autoComplete="off"
                     value={userName}
                     onChange={handleUserNameChange}
                     />
@@ -96,7 +96,7 @@ function LoginPage() {
                     type="password"
                     id="password"
                     placeholder='Enter Password'
-                    autocomplete="off"
+                    autoComplete="off"
                     value={password}
                     onChange={handlePasswordChange}
                     />
