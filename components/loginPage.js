@@ -47,7 +47,16 @@ function LoginPage() {
                     });
 
                 console.log(data);
-                console.log(Cookies);
+                console.log(Cookies.set("accessToken", data.accessToken, {
+                    expires: 7, 
+                    secure: true, 
+                    sameSite: "strict", 
+                    httpOnly: true 
+                   }));
+                console.log('token',data.data.token.accessToken);
+                console.log(Cookies.get("accessToken"));
+                // Redirect to the partner page
+                router.push("/partner");
             } else {
                 //login failed
                 const errorData = await response.json();
