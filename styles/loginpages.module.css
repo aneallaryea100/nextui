@@ -1,0 +1,87 @@
+
+.textCenter {
+    text-align: center;
+}
+
+.loginContainer {
+    display: flex;
+    background-color: red;
+    width: 100%;
+    height: 95vh;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.imageContainer {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #fff;
+}
+
+.signInContainer{
+    width: 40%;
+    background-color: #fff;
+}
+
+.signInWelcomeHead {
+    text-align: center;
+}
+
+.textContainer1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.register a{
+    color: pink;
+    text-decoration: none;
+}
+
+.formContainer {
+    background-color: lightslategrey;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.formControls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 80%;
+}
+
+.formControls > input {
+    border: 1px solid transparent;
+    padding: 0.5rem 0rem;
+    border-radius: 0.4rem;
+    background-color: lightcoral transparent;
+    outline: none;
+    padding: 0.5rem;
+}
+
+.loginbtn {
+    padding: 0.4rem;
+    background-color: lawngreen;
+}
+
+.signinoptions {
+    background-color: olive;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.accountSocials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accountSocials > p {
+    background-color: #fff;
+    padding: 0.99rem;
+}
