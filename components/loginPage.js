@@ -1,6 +1,7 @@
 "use client"
 import styles from '../styles/loginpages.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import RootLayout from '@app/layout';
 import { useState } from "react"
 import Cookies from "js-cookie";
 
@@ -47,7 +48,16 @@ function LoginPage() {
                     });
 
                 console.log(data);
-                console.log(Cookies);
+                console.log(Cookies.set("accessToken", data.accessToken, {
+                    expires: 7, 
+                    secure: true, 
+                    sameSite: "strict", 
+                    httpOnly: true 
+                   }));
+                console.log('token',data.data.token.accessToken);
+                console.log(Cookies.get("accessToken"));
+                // Redirect to the partner page
+                router.push("/partner");
             } else {
                 //login failed
                 const errorData = await response.json();
@@ -61,6 +71,7 @@ function LoginPage() {
 
 
   return (
+    <RootLayout>
     <div className={styles.loginContainer}>
         
             <div className={styles.imageContainer}>
@@ -125,6 +136,7 @@ function LoginPage() {
             
         
     </div>
+    </RootLayout>
   )
 }
 
