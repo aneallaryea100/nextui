@@ -1,6 +1,7 @@
 "use client"
 import styles from '../styles/loginpages.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import RootLayout from '@app/layout';
 import { useState } from "react"
 import Cookies from "js-cookie";
 
@@ -70,6 +71,7 @@ function LoginPage() {
 
 
   return (
+    <RootLayout>
     <div className={styles.loginContainer}>
         
             <div className={styles.imageContainer}>
@@ -134,6 +136,7 @@ function LoginPage() {
             
         
     </div>
+    </RootLayout>
   )
 }
 
