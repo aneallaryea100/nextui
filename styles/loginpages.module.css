@@ -1,87 +1,76 @@
-
-.textCenter {
-    text-align: center;
-}
-
-.loginContainer {
-    display: flex;
-    background-color: red;
-    width: 100%;
-    height: 95vh;
-    scroll-behavior: smooth;
-    overflow: hidden;
-}
-
-.imageContainer {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: #fff;
-}
-
 .signInContainer{
-    width: 40%;
-    background-color: #fff;
-}
-
-.signInWelcomeHead {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
 }
 
 .textContainer1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-}
-
-.register a{
-    color: pink;
-    text-decoration: none;
+    gap: 5rem;
 }
 
 .formContainer {
-    background-color: lightslategrey;
-    display: flex;
-    align-items: center;
-     justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
+    width: 25rem;
 }
 
 .formControls {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    width: 80%;
+    width: 100%;
+    margin: 1rem 0rem;
 }
 
 .formControls > input {
-    border: 1px solid transparent;
-    padding: 0.5rem 0rem;
-    border-radius: 0.4rem;
-    background-color: lightcoral transparent;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
     outline: none;
-    padding: 0.5rem;
+}
+
+.register {
+    color: chocolate;
+    text-decoration: none;
+    margin: 0rem 0.5rem;
 }
 
 .loginbtn {
-    padding: 0.4rem;
-    background-color: lawngreen;
+    padding: 1rem;
+    background-color: lightblue;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
 }
 
-.signinoptions {
-    background-color: olive;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.accountSocials {
+.paragraphreset {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
-.accountSocials > p {
-    background-color: #fff;
-    padding: 0.99rem;
+.forgotpassword {
+    color: chocolate;
+}
+
+.optionsignin {
+    width: 25rem;
+}
+
+.optionControls > button {
+    background-color: hotpink;
+    width: 100%;
+    margin: 0.5rem 0rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1rem;
 }
