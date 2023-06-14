@@ -6,11 +6,14 @@ import Cookies from "js-cookie";
 import Layout from '@layout/layout';
 import Link from 'next/link';
 import Image from 'next/image';
+import { signIn, signOut } from "next-auth/react";
+import { useRouter } from 'next/router';
 
 function Login() {
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
+    const router = useRouter();
 
     const handleUserNameChange = (e) => {
         setUserName(e.target.value);
@@ -22,53 +25,20 @@ function Login() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+       const statuss =  await signIn('credentials', {
+            redirect: false,
+            userName: e.userName,
+            password: e.password,
+            callbackUrl: "/"
+        })
 
-        const loginData = {
-            userName: userName,
-            password: password
-        };
+        if(statuss.ok) router.push(statuss.url)
+        console.log('statuss', statuss)
+    }
 
-        try {
-            const response = await fetch("https://spes.pscgh.com:442/pp_test/api/Authentication/login", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(loginData)
-            });
-
-            if(response.ok) {
-                //login successful, handle the response
-                const data = await response.json();
-
-                // Store the access token in a cookie
-                 Cookies.set("accessToken", data.accessToken, {
-                     expires: 7, 
-                     secure: true, 
-                     sameSite: "strict", 
-                     httpOnly: true 
-                    });
-
-                console.log(data);
-                console.log(Cookies.set("accessToken", data.accessToken, {
-                    expires: 7, 
-                    secure: true, 
-                    sameSite: "strict", 
-                    httpOnly: true 
-                   }));
-                console.log('token',data.data.token.accessToken);
-                console.log(Cookies.get("accessToken"));
-                // Redirect to the partner page
-                router.push("/");
-            } else {
-                //login failed
-                const errorData = await response.json();
-                setError(errorData.message);
-            }
-        } catch (error) {
-            // handle network or other errors
-            setError("An Error occured. Please try again later.");
-        }
+    //google handler function
+    async function handleGoogleSignin(){
+        signIn('google', {callbackUrl: "http://localhost:3000"})
     }
 
 
@@ -114,9 +84,10 @@ function Login() {
 
                     <p className={styles.paragraphreset}><Link href={'/resetpassword'} className={styles.forgotpassword}>Forgot password?</Link></p>
                     </form>
+
                     <div className={styles.optionsignin}>
                         <div className={styles.optionControls}>
-                            <button type="submit">Sign in with Google <Image src={'/images/google.svg'} width={20} height={20}></Image></button>
+                            <button type="submit" onClick={handleGoogleSignin}>Sign in with Google <Image src={'/images/google.svg'} width={20} height={20}></Image></button>
                         </div>
                         <div className={styles.optionControls}>
                             <button type="submit">Sign in with Github <Image src={'/images/github.svg'} width={20} height={20}></Image></button>

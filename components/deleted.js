@@ -51,3 +51,53 @@
 // }
 
 // export default Partners
+
+
+// login cred---
+
+// const loginData = {
+//     userName: userName,
+//     password: password
+// };
+
+// try {
+//     const response = await fetch("https://spes.pscgh.com:442/pp_test/api/Authentication/login", {
+//         method: "POST",
+//         headers: {
+//             "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify(loginData)
+//     });
+
+//     if(response.ok) {
+//         //login successful, handle the response
+//         const data = await response.json();
+
+//         // Store the access token in a cookie
+//          Cookies.set("accessToken", data.accessToken, {
+//              expires: 7, 
+//              secure: true, 
+//              sameSite: "strict", 
+//              httpOnly: true 
+//             });
+
+//         console.log(data);
+//         // console.log(Cookies.set("accessToken", data.accessToken, {
+//         //     expires: 7, 
+//         //     secure: true, 
+//         //     sameSite: "strict", 
+//         //     httpOnly: true 
+//         //    }));
+//         // console.log('token',data.data.token.accessToken);
+//         console.log(Cookies.get("accessToken"));
+//         // Redirect to the partner page
+//         // router.push("/");
+//     } else {
+//         //login failed
+//         const errorData = await response.json();
+//         setError(errorData.message);
+//     }
+// } catch (error) {
+//     // handle network or other errors
+//     setError("An Error occured. Please try again later.");
+// }

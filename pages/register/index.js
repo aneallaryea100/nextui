@@ -39,8 +39,10 @@ function Register() {
         <title>Register</title>
       </Head>
       <div className={styles.container}>
-      <h1 className={styles.h1text}>Register</h1>
-      <p>Tribals is happy to welcome you to its hemispeher. You are one click away from elevating your achievement.</p>
+      <h1 className={styles.h1text}>Register as a Tribal</h1>
+      <p className={styles.h1text}>
+      At Tribals, we strive to create an inclusive and empowering community where you can unlock your full potential. Join us today and embark on a transformative journey towards reaching new heights of success.
+      </p>
       <form onSubmit={handleSubmit} className={styles.formcontainer}>
         <div className={styles.formgroup}>
           <input

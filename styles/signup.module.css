@@ -1,6 +1,10 @@
 .container {
     max-width: 400px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
   }
   .h1text {
     text-align: center;
@@ -26,11 +30,11 @@
 
   .formgroup > button {
     display: block;
-    width: 105%;
+    width: 100%;
     padding: 0.9rem;
     font-size: 1rem;
     border-radius: 4px;
-    background-color: #4caf50;
+    background: radial-gradient(circle, rgba(174,237,238,0.9641106442577031) 0%, rgba(148,187,233,1) 74%);
     color: white;
     border: none;
     cursor: pointer;
