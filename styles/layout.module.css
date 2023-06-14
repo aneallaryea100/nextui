@@ -1,3 +1,22 @@
+@media only screen and (min-width: 1200px) {
+    .imageContainer {
+        display: block !important;
+        width: 50%;
+        height: 100%;
+        background-image: url('/images/tribes.JPG');
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    
+    .childrendiv {
+        width: 50%;
+        height: 100%;
+        padding: 1.5rem;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    }
+    
+}
+
 .layoutContainer {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
     padding: 3rem;
@@ -12,16 +31,6 @@
 }
 
 .imageContainer {
-    width: 50%;
-    height: 100%;
-    background-image: url('/images/tribes.JPG');
-    background-repeat: repeat;
-    background-size: cover;
+    display: none;
 }
 
-.childrendiv {
-    width: 50%;
-    height: 100%;
-    padding: 1.5rem;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
-}

@@ -52,10 +52,12 @@ function Login() {
                     <h3 className={styles.signInWelcomeHead}>
                         Welcome to Tribals
                     </h3>
+                    <p className={styles.textsummary}>
+                    We are thrilled to have you join our vibrant community of like-minded individuals. At Tribals, we foster an environment where collaboration, growth, and innovation thrive.
+                    </p>
                     <div className={styles.textContainer1}>
                         <p>Sign in to continue</p>
                         <p>Not a member yet? <Link href={'/register'} className={styles.register}>Register Now</Link></p>
-                        
                     </div>
                     <form onSubmit={handleSubmit} className={styles.formContainer}>
                     <div className={styles.formControls}>
@@ -84,6 +86,8 @@ function Login() {
 
                     <p className={styles.paragraphreset}><Link href={'/resetpassword'} className={styles.forgotpassword}>Forgot password?</Link></p>
                     </form>
+
+                    <div className={styles.separateline}><span className={styles.lineseparate}></span><span>Or</span><span className={styles.lineseparate}></span></div>
 
                     <div className={styles.optionsignin}>
                         <div className={styles.optionControls}>
