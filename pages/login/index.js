@@ -6,7 +6,7 @@ import Cookies from "js-cookie";
 import Layout from '@layout/layout';
 import Link from 'next/link';
 import Image from 'next/image';
-import { signIn, signOut } from "next-auth/react";
+import { signIn } from "next-auth/react";
 import { useRouter } from 'next/router';
 
 function Login() {
@@ -41,6 +41,11 @@ function Login() {
         signIn('google', {callbackUrl: "http://localhost:3000"})
     }
 
+    //github handler function
+    async function handleGithubSignin(){
+        signIn('github', {callbackUrl: "http://localhost:3000"})
+    }
+
 
   return (
     <Layout>
@@ -50,11 +55,9 @@ function Login() {
         <div className={styles.loginContainer}>
                 <div className={styles.signInContainer}>
                     <h3 className={styles.signInWelcomeHead}>
-                        Welcome to Tribals
+                        Tribals
                     </h3>
-                    <p className={styles.textsummary}>
-                    We are thrilled to have you join our vibrant community of like-minded individuals. At Tribals, we foster an environment where collaboration, growth, and innovation thrive.
-                    </p>
+                    
                     <div className={styles.textContainer1}>
                         <p>Sign in to continue</p>
                         <p>Not a member yet? <Link href={'/register'} className={styles.register}>Register Now</Link></p>
@@ -91,13 +94,10 @@ function Login() {
 
                     <div className={styles.optionsignin}>
                         <div className={styles.optionControls}>
-                            <button type="submit" onClick={handleGoogleSignin}>Sign in with Google <Image src={'/images/google.svg'} width={20} height={20}></Image></button>
+                            <button type="submit" onClick={handleGoogleSignin}>Sign in with Google <Image src={'/images/google.svg'} width={20} height={20} alt='googlesvg'></Image></button>
                         </div>
                         <div className={styles.optionControls}>
-                            <button type="submit">Sign in with Github <Image src={'/images/github.svg'} width={20} height={20}></Image></button>
-                        </div>
-                        <div className={styles.optionControls}>
-                            <button type="submit">Sign in with Twitter<Image src={'/images/twitter.svg'} width={20} height={20}></Image></button>
+                            <button type="submit" onClick={handleGithubSignin}>Sign in with Github <Image src={'/images/github.svg'} width={20} height={20} alt='githubsvg'></Image></button>
                         </div>
                     </div>
                     
