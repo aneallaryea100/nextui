@@ -7,33 +7,36 @@ import Layout from '@layout/layout';
 import Link from 'next/link';
 import Image from 'next/image';
 import { signIn } from "next-auth/react";
+import { useFormik } from 'formik';
 import { useRouter } from 'next/router';
+import { login_validate } from '../../lib/validate'
+import { HiOutlineFingerPrint } from "react-icons/hi";
 
 function Login() {
-    const [userName, setUserName] = useState("");
-    const [password, setPassword] = useState("");
-    const [error, setError] = useState(null);
+    const [show, setShow] = useState(false)
     const router = useRouter();
+    const formik = useFormik({
+        initialValues: {
+            userName:'',
+            password:''
+        },
+        validate: login_validate,
+        onSubmit
+    })
 
-    const handleUserNameChange = (e) => {
-        setUserName(e.target.value);
-    }
+    console.log(formik.errors);
 
-    const handlePasswordChange = (e) => {
-        setPassword(e.target.value);
-    }
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-       const statuss =  await signIn('credentials', {
+    async function onSubmit (values) {
+       const status =  await signIn('credentials', {
             redirect: false,
-            userName: e.userName,
-            password: e.password,
+            userName: values.userName,
+            password: values.password,
             callbackUrl: "/"
         })
 
-        if(statuss.ok) router.push(statuss.url)
-        console.log('statuss', statuss)
+        if(status.ok) router.push(status.url)
+        console.log('status', status)
+    console.log(values);
     }
 
     //google handler function
@@ -62,27 +65,26 @@ function Login() {
                         <p>Sign in to continue</p>
                         <p>Not a member yet? <Link href={'/register'} className={styles.register}>Register Now</Link></p>
                     </div>
-                    <form onSubmit={handleSubmit} className={styles.formContainer}>
+                    <form onSubmit={formik.handleSubmit} className={styles.formContainer}>
                     <div className={styles.formControls}>
                         <input
-                        type="text"
-                        id="username"
+                        type='text'
+                        name='userName'
                         placeholder='Enter Username'
-                        autoComplete="off"
-                        value={userName}
-                        onChange={handleUserNameChange}
+                        {...formik.getFieldProps('userName')}
                         />
                     </div>
+                    {formik.errors.userName && formik.touched.userName?<span>{formik.errors.userName}</span>: <></>}
                     <div className={styles.formControls}>
                         <input
-                        type="password"
-                        id="password"
+                        type={`${show ? "text" : "password"}`}
+                        name='password'
                         placeholder='Enter Password'
-                        autoComplete="off"
-                        value={password}
-                        onChange={handlePasswordChange}
+                        {...formik.getFieldProps('password')}
                         />
+                        <span className={styles.passwordIcon} onClick={()=> setShow(!show)}><HiOutlineFingerPrint size={30} color='gray' style={{ position: 'absolute', marginLeft: '-2rem', marginTop: '0.8rem', cursor: 'pointer' }}/></span>
                     </div>
+                    {formik.errors.password && formik.touched.password?<span>{formik.errors.password}</span>: <></>}
                     <div className={styles.formControls}>
                         <button type="submit" className={styles.loginbtn}>Login</button>
                     </div>
@@ -99,6 +101,10 @@ function Login() {
                         <div className={styles.optionControls}>
                             <button type="submit" onClick={handleGithubSignin}>Sign in with Github <Image src={'/images/github.svg'} width={20} height={20} alt='githubsvg'></Image></button>
                         </div>
+                    </div>
+
+                    <div className={styles.tribalMarks}>
+                        <p className={styles.text}>All rights reserved. Tribals &copy; 2023</p>
                     </div>
                     
                 </div>

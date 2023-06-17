@@ -4,6 +4,7 @@ import GoogleProvider from "next-auth/providers/google";
 import GitHubProvider from "next-auth/providers/github";
 
 export default NextAuth({
+  secret: process.env.NEXTAUTH_SECRET,
     providers: [
       CredentialsProvider({
             // The name to display on the sign in form (e.g. 'Sign in with...')

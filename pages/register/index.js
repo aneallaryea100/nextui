@@ -3,35 +3,24 @@ import Link from "next/link"
 import { useState } from "react"
 import styles from '@styles/signup.module.css'
 import Layout from "@layout/layout"
+import { useFormik } from 'formik';
+import { registerValidate } from '../../lib/validate'
 
 function Register() {
-  const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
-  });
+  const formik = useFormik({
+    initialValues:{
+      userName:'',
+      email:'',
+      password:'',
+      cpassword:''
+    },
+    validate: registerValidate,
+    onSubmit
+  })
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Perform form submission logic here
-    console.log(formData);
-    // Reset form after submission
-    setFormData({
-      username: '',
-      email: '',
-      password: '',
-      confirmPassword: '',
-    });
-  };
+  async function onSubmit(values){
+    console.log(values);
+  }
 
   return (
     <Layout>
@@ -41,59 +30,54 @@ function Register() {
       <div className={styles.container}>
       <h1 className={styles.h1text}>Register as a Tribal</h1>
       <p className={styles.h1text}>
-      At Tribals, we strive to create an inclusive and empowering community where you can unlock your full potential. Join us today and embark on a transformative journey towards reaching new heights of success.
+         At Tribals, we strive to create an inclusive and empowering community where you can unlock your full potential. Join us today and embark on a transformative journey towards reaching new heights of success.
       </p>
-      <form onSubmit={handleSubmit} className={styles.formcontainer}>
-        <div className={styles.formgroup}>
+      <form onSubmit={formik.handleSubmit} className={styles.formcontainer}>
+        <div className={`${styles.formgroup} ${formik.errors.userName && formik.touched.userName? 'red_border' : ''}`}>
           <input
             type="text"
-            id="username"
             name="username"
             placeholder="User name"
-            value={formData.username}
-            onChange={handleChange}
-            required
+            {...formik.getFieldProps('userName')}
           />
         </div>
-        <div className={styles.formgroup}>
+        {/* {formik.errors.userName && formik.touched.userName?<span>{formik.errors.userName}</span>: <></>} */}
+        <div className={`${styles.formgroup} ${formik.errors.email && formik.touched.email? 'red_border' : ''}`}>
           <input
             type="email"
-            id="email"
             name="email"
             placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
+            {...formik.getFieldProps('email')}
           />
         </div>
-        <div className={styles.formgroup}>
+        {/* {formik.errors.email && formik.touched.email?<span>{formik.errors.email}</span>: <></>} */}
+        <div className={`${styles.formgroup} ${formik.errors.password && formik.touched.password? 'red_border' : ''}`}>
           <input
             type="password"
-            id="password"
             name="password"
             placeholder="Password"
-            value={formData.password}
-            onChange={handleChange}
-            required
+            {...formik.getFieldProps('password')}
           />
         </div>
-        <div className={styles.formgroup}>
+        {/* {formik.errors.password && formik.touched.password?<span>{formik.errors.password}</span>: <></>} */}
+        <div className={`${styles.formgroup} ${formik.errors.cpassword && formik.touched.cpassword? 'red_border' : ''}`}>
           <input
             type="password"
-            id="confirmPassword"
-            name="confirmPassword"
+            name="cpassword"
             placeholder="Confirm Password"
-            value={formData.confirmPassword}
-            onChange={handleChange}
-            required
+            {...formik.getFieldProps('cpassword')}
           />
         </div>
+        {/* {formik.errors.cpassword && formik.touched.cpassword?<span>{formik.errors.cpassword}</span>: <></>} */}
         <div className={styles.formgroup}>
           <button type="submit" className={styles.registerbtn}>Sign Up</button>
         </div>
       </form>
       <div className={styles.btntextbottom}>
         <p>Have an account? <Link href={'/login'}>Sign In</Link></p>
+      </div>
+      <div className={styles.registerFooter}>
+        <p className={styles.footertext}>All rights reserved. Tribals &copy; 2023</p>
       </div>
       </div>
     </Layout>

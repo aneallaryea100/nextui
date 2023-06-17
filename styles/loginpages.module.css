@@ -1,3 +1,13 @@
+@media only screen and (min-width: 600px) {
+    .textContainer1 {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+}
+
 .signInContainer{
     display: flex;
     flex-direction: column;
@@ -7,26 +17,32 @@
     color: #fff;
 }
 
+.signInWelcomeHead {
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient( 90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 52%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Bodoni Moda', serif;
+}
+
 .textsummary {
     text-align: center;
 }
 
 .textContainer1 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem;
+    gap: 0.5rem;
 }
 
 .formContainer {
     width: 25rem;
-}
-
-.formControls {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 1rem 0rem;
+    gap: 1.2rem;
+    margin: 0rem 1.5rem 0rem 0rem;
 }
 
 .formControls > input {
@@ -34,6 +50,11 @@
     border: none;
     border-radius: 0.5rem;
     outline: none;
+    width: 100%;
+}
+
+.passwordIcon {
+    background-color: #fff;
 }
 
 .register {
@@ -50,6 +71,7 @@
     border-radius: 0.5rem;
     outline: none;
     cursor: pointer;
+    width: 100%;
 }
 
 .paragraphreset {
@@ -80,7 +102,6 @@
 .optionControls > button {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 52%, rgba(0,212,255,1) 100%);
     width: 100%;
-    margin: 0.5rem 0rem;
     border: none;
     outline: none;
     padding: 1rem;
@@ -91,4 +112,6 @@
     justify-content: space-evenly;
     font-size: 1rem;
     color: #fff;
+    margin: 0.8rem 0rem;
 }
+
