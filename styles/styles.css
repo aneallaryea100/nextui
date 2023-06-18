@@ -13,3 +13,8 @@ body {
       'Arial', sans-serif; */
       font-family: 'Poppins', sans-serif;
   }
+
+  .userContainer {
+    display: flex;
+    justify-content: space-around;
+  }
