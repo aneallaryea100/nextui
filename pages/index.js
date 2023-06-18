@@ -3,11 +3,15 @@ import Link from "next/link"
 import { useState } from "react"
 import Head from "next/head";
 import { getSession, useSession, signOut } from "next-auth/react";
+import GuestPage from "@components/guest";
+import UserPage from "@components/authorizeUserPage";
+import Nav from "@components/nav";
 
 
 function Home() {
 
   const {data: session} = useSession();
+  console.log("checck the session", session)
 
   function handleSignOut(){
     signOut()
@@ -18,6 +22,7 @@ function Home() {
       <Head>
         <title>Home Page</title>
       </Head> 
+      <Nav />
       {session ? User({ session, handleSignOut }) : Guest()}
     </div>
   )
@@ -27,10 +32,7 @@ function Home() {
 
 function Guest () {
   return (
-    <div className='guestContainer'>
-      <h1>The guest page</h1>
-      <Link href={'/login'}>Login</Link>
-    </div>
+    <GuestPage />
   )
 }
 
@@ -38,20 +40,7 @@ function Guest () {
 
 function User ({ session, handleSignOut }) {
   return (
-    <main className="userContainer">
-      <h1>Authorize User page</h1> 
-      <button onClick={handleSignOut}>Sign out</button>
-
-      <div>
-        <h5>{session.user.name}</h5>
-        <h5>{session.user.email}</h5>
-      </div>
-
-      <div>
-        <Link href={'/profile'}>profile</Link>
-      </div>
-        
-    </main>
+    <UserPage session={session} handleSignOut={handleSignOut} />
   )
 }
 

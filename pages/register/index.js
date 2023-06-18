@@ -29,7 +29,7 @@ function Register() {
       </Head>
       <div className={styles.container}>
       <h1 className={styles.h1text}>Register as a Tribal</h1>
-      <p className={styles.h1text}>
+      <p className={styles.ptext}>
          At Tribals, we strive to create an inclusive and empowering community where you can unlock your full potential. Join us today and embark on a transformative journey towards reaching new heights of success.
       </p>
       <form onSubmit={formik.handleSubmit} className={styles.formcontainer}>
@@ -74,7 +74,7 @@ function Register() {
         </div>
       </form>
       <div className={styles.btntextbottom}>
-        <p>Have an account? <Link href={'/login'}>Sign In</Link></p>
+        <p>Have an account? <Link href={'/login'} className={styles.signbtnsq}>Sign In</Link></p>
       </div>
       <div className={styles.registerFooter}>
         <p className={styles.footertext}>All rights reserved. Tribals &copy; 2023</p>

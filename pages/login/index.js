@@ -99,7 +99,7 @@ function Login() {
                             <button type="submit" onClick={handleGoogleSignin}>Sign in with Google <Image src={'/images/google.svg'} width={20} height={20} alt='googlesvg'></Image></button>
                         </div>
                         <div className={styles.optionControls}>
-                            <button type="submit" onClick={handleGithubSignin}>Sign in with Github <Image src={'/images/github.svg'} width={20} height={20} alt='githubsvg'></Image></button>
+                            <button type="submit" onClick={handleGithubSignin}>Sign in with Github <Image src={'/images/github_white.svg'} width={25} height={25} alt='githubsvg'></Image></button>
                         </div>
                     </div>
 

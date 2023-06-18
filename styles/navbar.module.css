@@ -1,0 +1,53 @@
+.navContainer {
+    color: teal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.98rem 0rem;
+    background-color: transparent;
+    width: 100%;
+}
+
+.navContainer > div {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #fff;
+}
+
+.navContainer > div:hover {
+    border: 1px solid #b72727;
+}
+
+.logoContain {
+    border: 1px solid #b72727 !important;
+    padding: 0.5rem;
+    background-color: #fff;
+}
+
+.logoContain:hover {
+    border: 1px solid #fff;
+    background-color: #b72727;
+    color: #fff;
+}
+
+.logo {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(5, 60, 75);
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #fff;
+}
+
+.loggbtn {
+    padding: 0.3rem 0.5rem;
+    width: 5rem;
+    background: none;
+    border: 1px solid #435;
+    background-color: rgb(24, 2, 46);
+    color: antiquewhite;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}

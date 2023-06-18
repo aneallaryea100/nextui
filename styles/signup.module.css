@@ -4,9 +4,18 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    color: #fff;
+    color: #161515;
   }
+
   .h1text {
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(5, 60, 75);
+  }
+
+  .ptext{
     text-align: center;
   }
 
@@ -34,7 +43,7 @@
     padding: 0.9rem;
     font-size: 1rem;
     border-radius: 4px;
-    background: radial-gradient(circle, rgba(174,237,238,0.9641106442577031) 0%, rgba(148,187,233,1) 74%);
+    background-color: rgb(5, 60, 75);
     color: white;
     border: none;
     cursor: pointer;
@@ -44,6 +53,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .signbtnsq {
+   color: #453;
   }
 
   .registerFooter {
