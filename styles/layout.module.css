@@ -3,9 +3,9 @@
         display: block !important;
         width: 50%;
         height: 100%;
-        background-image: url('/images/brave_heart.JPG');
+        /* background-image: url('/images/brave_heart.JPG');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
     }
     
     .childrendiv {
