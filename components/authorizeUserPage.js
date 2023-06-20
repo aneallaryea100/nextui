@@ -1,18 +1,27 @@
 import Link from "next/link"
-import Image from "next/image"
+
 
 function UserPage({ session, handleSignOut }) {
   return (
     <main className="userContainer">
-      <div>red</div>
-      <div>
-        {/* <Image
-        src={'/images/overall.jpg'}
-        width={700}
-        height={500}
-        alt="grace-bol"
-        /> */}
+      <div className="redDiv">
+        <div className="centerRedDiv">
+          <span className="textstory">The Trees on the edge</span>
+          <button className="findoutmore">Fnd out more</button>
+        </div>
+      </div>
+      <div className="blueDiv">
+      <div className="centerRedDiv">
+          <span className="textstory">The Trees on the edge</span>
+          <button className="findoutmore">Fnd out more</button>
+        </div>
       </div> 
+      <div className="greenDiv">
+      <div className="centerRedDiv">
+          <span className="textstory">The Trees on the edge</span>
+          <button className="findoutmore">Fnd out more</button>
+      </div>
+      </div>
     </main>
   )
 }

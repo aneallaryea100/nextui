@@ -4,6 +4,7 @@ import styles from '@styles/layout.module.css'
 
 export default function Layout ({children}) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [visible, setVisible] = useState(true);
 
     const images = [
         '/images/smoke.jpg',
@@ -17,7 +18,11 @@ export default function Layout ({children}) {
 
     useEffect(() => {
         const interval = setInterval(() => {
-          setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+          setVisible(false);
+          setTimeout(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+            setVisible(true);
+          }, 500);
         }, 10000);
     
         return () => clearInterval(interval);
@@ -28,6 +33,7 @@ export default function Layout ({children}) {
         backgroundSize: 'cover',
         // backgroundPosition: '100%',
         backgroundRepeat: 'no-repeat',
+        opacity: visible ? 1 : 0,
         transition: 'opacity 0.5s ease-in-out',
       };
 
