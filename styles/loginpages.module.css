@@ -1,87 +1,120 @@
-
-.textCenter {
-    text-align: center;
-}
-
-.loginContainer {
-    display: flex;
-    background-color: red;
-    width: 100%;
-    height: 95vh;
-    scroll-behavior: smooth;
-    overflow: hidden;
-}
-
-.imageContainer {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: #fff;
+@media only screen and (min-width: 600px) {
+    .textContainer1 {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
 }
 
 .signInContainer{
-    width: 40%;
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #161515;
 }
 
 .signInWelcomeHead {
+    font-size: 3.5rem;
+    background: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(5, 60, 75);
+    font-family: 'Bodoni Moda', serif;
+}
+
+/* -webkit-linear-gradient( 90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 52%, rgba(252,176,69,1) 100%) */
+
+.textsummary {
     text-align: center;
 }
 
 .textContainer1 {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-}
-
-.register a{
-    color: pink;
-    text-decoration: none;
+    gap: 0.5rem;
 }
 
 .formContainer {
-    background-color: lightslategrey;
-    display: flex;
-    align-items: center;
-     justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.formControls {
+    width: 25rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    width: 80%;
+    gap: 1.2rem;
+    margin: 0rem 1.5rem 0rem 0rem;
 }
 
 .formControls > input {
-    border: 1px solid transparent;
-    padding: 0.5rem 0rem;
-    border-radius: 0.4rem;
-    background-color: lightcoral transparent;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
     outline: none;
-    padding: 0.5rem;
+    width: 100%;
+    background: transparent !important;
+}
+
+.passwordIcon {
+    background-color: #fff;
+}
+
+.register {
+    color: #453;
+    text-decoration: underline;
+    margin: 0rem 0.5rem;
 }
 
 .loginbtn {
-    padding: 0.4rem;
-    background-color: lawngreen;
+    padding: 1rem;
+    background-color: rgb(5, 60, 75);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
 }
 
-.signinoptions {
-    background-color: olive;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.accountSocials {
+.paragraphreset {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
-.accountSocials > p {
-    background-color: #fff;
-    padding: 0.99rem;
+.forgotpassword {
+    color: #453;
 }
+
+.separateline {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lineseparate {
+    border: 1px solid #161515;
+    width: 10.5rem;
+    margin: 0rem 0.9rem;
+}
+
+.optionsignin {
+    width: 25rem;
+}
+
+.optionControls > button {
+    background: rgb(5, 60, 75);
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0.8rem 0rem;
+}
+
