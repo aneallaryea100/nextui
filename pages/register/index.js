@@ -3,6 +3,7 @@ import Link from "next/link"
 import { useState } from "react"
 import styles from '@styles/signup.module.css'
 import Layout from "@layout/layout"
+import SignPageLayout from "@layout/signpage/layout"
 import { useFormik } from 'formik';
 import { registerValidate } from '../../lib/validate'
 
@@ -23,7 +24,7 @@ function Register() {
   }
 
   return (
-    <Layout>
+    <SignPageLayout>
       <Head>
         <title>Register</title>
       </Head>
@@ -80,7 +81,7 @@ function Register() {
         <p className={styles.footertext}>All rights reserved. Tribals &copy; 2023</p>
       </div>
       </div>
-    </Layout>
+    </SignPageLayout>
   )
 }
 

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import styles from '@styles/loginpages.module.css'
 import { useState } from "react"
 import Cookies from "js-cookie";
-import Layout from '@layout/layout';
+import SignPageLayout from '@layout/signpage/layout';
 import Link from 'next/link';
 import Image from 'next/image';
 import { signIn } from "next-auth/react";
@@ -51,7 +51,7 @@ function Login() {
 
 
   return (
-    <Layout>
+    <SignPageLayout>
         <Head>
             <title>Login</title>
         </Head>
@@ -109,7 +109,7 @@ function Login() {
                     
                 </div>
         </div>
-    </Layout>
+    </SignPageLayout>
   )
 }
 
