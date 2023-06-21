@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -12,6 +16,8 @@ body {
     /* font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
       'Arial', sans-serif; */
       font-family: 'Poppins', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
   }
 
   .userContainer {
@@ -21,9 +27,10 @@ body {
     height: 100vh;
     width: 100vw;
   }
-
+  
   .userContainer > div:hover .centerRedDiv {
     opacity: 1;
+    background-color: rgba(0,0,0,0.4);
   }
 
   .redDiv {
@@ -69,16 +76,29 @@ body {
     align-items: center;
     gap: 2rem;
     opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .centerRedDiv h2 {
+    text-decoration: underline;
   }
 
   .findoutmore {
-    border: 1px solid #6d1010;
+    border: 1px solid #fff;
     background-color: rgb(243, 247, 241);
     padding: 0.5rem;
     margin: 0.5rem;
-    width: 10rem;
+    width: 15rem;
     cursor: pointer;
-    color: rgb(5, 60, 75);;
+    color: #000000;
     font-weight: 800;
+    font-size: large;
     font-family: 'Bodoni Moda', serif;
+    border-radius: 0.5rem;
   }
