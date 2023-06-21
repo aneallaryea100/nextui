@@ -30,9 +30,9 @@ function Register() {
       </Head>
       <div className={styles.container}>
       <h1 className={styles.h1text}>Register as a Tribal</h1>
-      <p className={styles.ptext}>
+      {/* <p className={styles.ptext}>
          At Tribals, we strive to create an inclusive and empowering community where you can unlock your full potential. Join us today and embark on a transformative journey towards reaching new heights of success.
-      </p>
+      </p> */}
       <form onSubmit={formik.handleSubmit} className={styles.formcontainer}>
         <div className={`${styles.formgroup} ${formik.errors.userName && formik.touched.userName? 'red_border' : ''}`}>
           <input
