@@ -5,7 +5,7 @@ import Head from "next/head";
 import { getSession, useSession, signOut } from "next-auth/react";
 import GuestPage from "@components/guest";
 import UserPage from "@components/authorizeUserPage";
-import Nav from "@components/nav";
+import FeaturedArtist from "@components/featuredArtist";
 
 
 function Home() {
@@ -24,6 +24,7 @@ function Home() {
       </Head> 
       
       {session ? User({ session, handleSignOut }) : Guest()}
+      <FeaturedArtist />
     </div>
   )
 }
@@ -40,7 +41,10 @@ function Guest () {
 
 function User ({ session, handleSignOut }) {
   return (
-    <UserPage session={session} handleSignOut={handleSignOut} />
+    <>
+      <UserPage session={session} handleSignOut={handleSignOut} />
+    </>
+    
   )
 }
 
