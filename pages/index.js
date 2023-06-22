@@ -22,7 +22,7 @@ function Home() {
       <Head>
         <title>Home Page</title>
       </Head> 
-      <Nav />
+      
       {session ? User({ session, handleSignOut }) : Guest()}
     </div>
   )
