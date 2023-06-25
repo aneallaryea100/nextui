@@ -5,7 +5,8 @@ import Head from "next/head";
 import { getSession, useSession, signOut } from "next-auth/react";
 import GuestPage from "@components/guest";
 import UserPage from "@components/authorizeUserPage";
-import FeaturedArtist from "@components/featuredArtist";
+import Featured from "@components/featuredArtist";
+import GalleryFeatured from "@components/galleryExhibit";
 
 
 function Home() {
@@ -24,7 +25,8 @@ function Home() {
       </Head> 
       
       {session ? User({ session, handleSignOut }) : Guest()}
-      <FeaturedArtist />
+      <Featured />
+      <GalleryFeatured />
     </div>
   )
 }

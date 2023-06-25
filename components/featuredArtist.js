@@ -4,10 +4,11 @@ import Kalei from '../public/images/Kalei.jpg'
 import Ghosts from '../public/images/Ghosts.jpg'
 import Yahima from '../public/images/cameroon.jpg'
 import ndebele from '../public/images/gramwood.jpg'
-function FeaturedArtist() {
+
+function Featured() {
   return (
     <div className={styles.featuredContainer}>
-      <h1>Featured </h1>
+      <h1 className={styles.featuredheadtitle}>Featured </h1>
 
       <div className={styles.artistContainer}>
             <div className={styles.artistContainerList}>
@@ -54,4 +55,4 @@ function FeaturedArtist() {
   )
 }
 
-export default FeaturedArtist
+export default Featured
