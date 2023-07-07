@@ -7,6 +7,7 @@ import GuestPage from "@components/guest";
 import UserPage from "@components/authorizeUserPage";
 import Featured from "@components/featuredArtist";
 import GalleryFeatured from "@components/galleryExhibit";
+import FeaturedProducts from "@components/featuredProducts";
 
 
 function Home() {
@@ -27,6 +28,7 @@ function Home() {
       {session ? User({ session, handleSignOut }) : Guest()}
       <Featured />
       <GalleryFeatured />
+      <FeaturedProducts />
     </div>
   )
 }
