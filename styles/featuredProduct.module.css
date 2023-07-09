@@ -1,5 +1,10 @@
 .darkbackground {
     background-color: #f7f7f701;
+    margin: 0rem 3rem;
+  }
+
+  .headGalText {
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
   }
 
 .itemBox {
@@ -51,4 +56,12 @@
     font-weight: 700;
     color: rgb(98, 87, 75);
     font-style: unset;
+}
+
+.heartbtn {
+    cursor: pointer;
+}
+
+.heartFilled {
+    color: red;
 }

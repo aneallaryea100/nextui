@@ -1,9 +1,10 @@
 import React from 'react'
+import FeaturedProducts from './featuredProducts'
 
 function GalleryFeatured() {
   return (
     <div>
-      <h1>Gallery Featured</h1>
+      <FeaturedProducts />
     </div>
   )
 }
