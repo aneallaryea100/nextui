@@ -9,6 +9,7 @@ import Featured from "@components/featuredArtist";
 import GalleryFeatured from "@components/galleryExhibit";
 import FollowArtist from "@components/followArtist";
 import BlogDisplay from "@components/blogDisplay";
+import MeetAdvisor from "@components/meetAdvisor";
 
 
 function Home() {
@@ -31,6 +32,7 @@ function Home() {
       <GalleryFeatured />
       <BlogDisplay />
       <FollowArtist />
+      <MeetAdvisor />
     </div>
   )
 }
