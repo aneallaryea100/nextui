@@ -5,7 +5,11 @@ import Head from "next/head";
 import { getSession, useSession, signOut } from "next-auth/react";
 import GuestPage from "@components/guest";
 import UserPage from "@components/authorizeUserPage";
-import Nav from "@components/nav";
+import Featured from "@components/featuredArtist";
+import GalleryFeatured from "@components/galleryExhibit";
+import FollowArtist from "@components/followArtist";
+import BlogDisplay from "@components/blogDisplay";
+import MeetAdvisor from "@components/meetAdvisor";
 
 
 function Home() {
@@ -22,8 +26,13 @@ function Home() {
       <Head>
         <title>Home Page</title>
       </Head> 
-      <Nav />
+      
       {session ? User({ session, handleSignOut }) : Guest()}
+      <Featured />
+      <GalleryFeatured />
+      <BlogDisplay />
+      <FollowArtist />
+      <MeetAdvisor />
     </div>
   )
 }
@@ -40,7 +49,10 @@ function Guest () {
 
 function User ({ session, handleSignOut }) {
   return (
-    <UserPage session={session} handleSignOut={handleSignOut} />
+    <>
+      <UserPage session={session} handleSignOut={handleSignOut} />
+    </>
+    
   )
 }
 

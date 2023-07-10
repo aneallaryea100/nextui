@@ -1,55 +1,70 @@
-.navContainer {
-    color: teal;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0.98rem 0rem;
-    background-color: #fff;
-    width: 100%;
-    position: fixed;
-    z-index: 2;
-}
 
-.navContainer > div {
-    padding: 0.3rem 0.5rem;
-    border: 1px solid #fff;
-}
+/* @media (min-width: 1025px) and (max-width: 1280px) { */
+    @media only screen and (min-width: 768px){
+    .navContainer {
+        /* color: teal; */
+        background-color: #fff;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
 
-.navContainer > div:hover {
-    border: 1px solid #b72727;
-}
+    .navContainer1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid #000;
+        padding: 0.5rem 0rem;
+    }
 
-.logoContain {
-    border: 1px solid #b72727 !important;
-    padding: 0.5rem;
-    background-color: #fff;
-}
+    .navContainer1 a {
+        color: #000;
+    }
+    
+    .navContainer1 > div {
+        padding: 0.3rem 0.5rem;
+        border: 1px solid #fff;
+    }
+    
+    .navContainer1 > div:hover {
+        border: 1px solid #b72727;
+    }
+    
+    .logoContain {
+        border: 1px solid #b72727 !important;
+        padding: 0px;
+        background-color: #fff;
+    }
+    
+    .logoContain:hover {
+        border: 1px solid #fff;
+        background-color: #b72727;
+        color: #fff;
+    }
+    
+    .logo {
+        font-family: 'Bodoni Moda', serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgb(5, 60, 75);
+        text-decoration: none;
+    }
+    
+    .logo:hover {
+        color: #fff;
+    }
+    
+    
+    
+  }
 
-.logoContain:hover {
-    border: 1px solid #fff;
-    background-color: #b72727;
-    color: #fff;
-}
 
-.logo {
-    font-family: 'Bodoni Moda', serif;
-    font-size: 2rem;
-    font-weight: 600;
-    color: rgb(5, 60, 75);
-    text-decoration: none;
-}
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    .navContainer{
+        background-color: yellow;
+    }
+    
+  }
 
-.logo:hover {
-    color: #fff;
-}
-
-.loggbtn {
-    padding: 0.3rem 0.5rem;
-    width: 5rem;
-    background: none;
-    border: 1px solid rgb(232, 14, 174);
-    background-color: rgb(239, 9, 9);
-    color: antiquewhite;
-    border-radius: 0.2rem;
-    cursor: pointer;
-}
+ 
