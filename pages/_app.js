@@ -2,6 +2,7 @@ import '../styles/styles.css'
 import { SessionProvider } from "next-auth/react";
 import { useRouter } from 'next/router';
 import Nav from '@components/nav';
+import Footer from '@components/footer';
 
 function MyApp({Component, pageProps}){
     const router = useRouter();
@@ -11,6 +12,7 @@ function MyApp({Component, pageProps}){
         <SessionProvider session={pageProps.session}>
            {showRegister && showHeader && <Nav />}
              <Component {...pageProps} />
+           {showRegister && showHeader && <Footer />}
         </SessionProvider>
         
     )

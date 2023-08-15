@@ -20,6 +20,54 @@ body {
       -moz-osx-font-smoothing: grayscale;
   }
 
+  /* Desktop view */
+  @media screen and (min-width: 1024px){
+    .userContainer {
+      display: flex;
+      justify-content: space-around;
+      background-color: #483;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+    
+  
+    .redDiv {
+      display: block !important;
+      background-color: teal;
+      background-image: url('/images/sweet_boy.JPG');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 33.33%;
+      position: relative;
+    }
+  
+    .redDiv:hover {
+      background-color: teal;
+    }
+  
+    .blueDiv {
+      background-color: rgb(159, 53, 14);
+      background-image: url('/images/no_smile.JPG');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 33.33% !important;
+      position: relative;
+    }
+  
+    .greenDiv {
+      display: block !important;
+      background-color: rgb(45, 236, 11);
+      background-image: url('/images/twin_sisters.JPG');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 33.33%;
+      position: relative;
+    }
+  
+  }
+
+  /* Mobile view */
   .userContainer {
     display: flex;
     justify-content: space-around;
@@ -28,23 +76,9 @@ body {
     width: 100%;
     overflow: hidden;
   }
-  
-  .userContainer > div:hover .centerRedDiv {
-    opacity: 1;
-    background-color: rgba(0,0,0,0.4);
-  }
 
-  .redDiv {
-    background-color: teal;
-    background-image: url('/images/sweet_boy.JPG');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 33.33%;
-    position: relative;
-  }
-
-  .redDiv:hover {
-    background-color: teal;
+  .redDiv{
+    display: none;
   }
 
   .blueDiv {
@@ -52,17 +86,12 @@ body {
     background-image: url('/images/no_smile.JPG');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 33.33%;
+    width: 100%;
     position: relative;
   }
 
   .greenDiv {
-    background-color: rgb(45, 236, 11);
-    background-image: url('/images/twin_sisters.JPG');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 33.33%;
-    position: relative;
+    display: none;
   }
 
   .centerRedDiv {
@@ -86,6 +115,12 @@ body {
     font-weight: 600;
   }
 
+  .userContainer > div:hover .centerRedDiv {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  
   .centerRedDiv h2 {
     text-decoration: underline;
   }
@@ -104,4 +139,5 @@ body {
     border-radius: 0.5rem;
   }
 
+  
   

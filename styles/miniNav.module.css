@@ -1,45 +1,81 @@
-.miniNavContainer {
-    background-color: #fff;
-    width: 100%;
-    margin: 0rem 0rem;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0.5rem 0rem;
+/* Desktop view */
+@media screen and (min-width: 1024px){
+    .miniNavContainer {
+        background-color: #fff;
+        width: 100%;
+        margin: 0rem 0rem;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5rem 0rem;
+    }
+    
+    .inputSearchDiv {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #000;
+        color: #000;
+    }
+    
+    .inputSearchTexts {
+        width: 100%;
+        border-top: none;
+        outline: none;
+        border: none;
+        background: none;
+        padding: 0.5rem 0.2rem;
+    }
+    
+    .loggbtn {
+        padding: 0.3rem 0.5rem;
+        width: 5rem;
+        background: none;
+        border: 1px solid rgb(232, 14, 174);
+        background-color: rgb(239, 9, 9);
+        color: antiquewhite;
+        border-radius: 0.2rem;
+        cursor: pointer;
+    }
+    
+    .acountSearchProfile {
+        display: flex !important;
+        justify-content: space-evenly;
+        align-items: center;
+        color: black;
+        width: 30%;
+    }
 }
 
-.inputSearchDiv {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #000;
-    color: #000;
-}
+/* tablet view */
+@media screen and (min-width: 768px)
+ and (max-width: 1024px){}
 
-.inputSearchTexts {
-    width: 100%;
-    border-top: none;
-    outline: none;
-    border: none;
-    background: none;
-    padding: 0.5rem 0.2rem;
-}
 
-.loggbtn {
-    padding: 0.3rem 0.5rem;
-    width: 5rem;
-    background: none;
-    border: 1px solid rgb(232, 14, 174);
-    background-color: rgb(239, 9, 9);
-    color: antiquewhite;
-    border-radius: 0.2rem;
-    cursor: pointer;
-}
+/* mobile and default view */
+    .miniNavContainer {
+        padding: 0rem 1rem;
+    }
 
-.acountSearchProfile {
-    width: 30%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: black;
-}
+    .inputSearchDiv {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #000;
+        color: #000;
+    }
+
+    .inputSearchTexts {
+        width: 100%;
+        border-top: none;
+        outline: none;
+        border: none;
+        background: none;
+        padding: 0.5rem 0.2rem;
+    }
+
+   .acountSearchProfile {
+     display: none;
+   }
+  

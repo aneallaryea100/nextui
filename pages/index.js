@@ -15,7 +15,6 @@ import MeetAdvisor from "@components/meetAdvisor";
 function Home() {
 
   const {data: session} = useSession();
-  console.log("checck the session", session)
 
   function handleSignOut(){
     signOut()
@@ -24,7 +23,7 @@ function Home() {
   return (
     <div className="homecontainer">
       <Head>
-        <title>Home Page</title>
+        <title>Tribals</title>
       </Head> 
       
       {session ? User({ session, handleSignOut }) : Guest()}

@@ -1,16 +1,18 @@
-
-/* @media (min-width: 1025px) and (max-width: 1280px) { */
-    @media only screen and (min-width: 768px){
+    /* desktop screen */
+    @media screen and (min-width: 1024px){
     .navContainer {
-        /* color: teal; */
         background-color: #fff;
         width: 100%;
         position: fixed;
         z-index: 1;
     }
 
+    .navMobile {
+        display: none !important;
+    }
+
     .navContainer1 {
-        display: flex;
+        display: flex !important;
         justify-content: space-around;
         align-items: center;
         border-bottom: 1px solid #000;
@@ -58,13 +60,26 @@
     
   }
 
+/* tablet screen */
+/* @media screen and (min-width: 768px)
+ and (max-width: 1024px){} */
 
-  @media (min-width: 481px) and (max-width: 767px) {
-  
-    .navContainer{
-        background-color: yellow;
+
+ /* default mobile screen */
+    .navContainer {
+      background-color: #fff;
     }
-    
-  }
+
+    .navContainer1 {
+        display: none;
+    }
+
+    .navMobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 1rem;
+    }
+  
 
  

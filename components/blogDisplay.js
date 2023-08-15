@@ -16,6 +16,7 @@ function BlogDisplay() {
                 <span className={styles.blogDisplayContenttext3}>15 July, 2023</span>
             </div>
         </div>
+        
         <div className={styles.blogDisplayContentleftEdit}>
             <div className={styles.blogDisplayContentleftBox}>
                 <div className={styles.blogDisplayContentleftImageBox}>

@@ -11,12 +11,12 @@ function MiniNavbar() {
         <AiOutlineSearch />
       </div>
       <div className={styles.acountSearchProfile}>
-      <span>Buy</span>
-      <span>Sell</span>
-        <span>Editorial</span>
-        <AiFillMail />
-        <AiOutlineUser />
-      <btb>{session?<button onClick={() => signOut()} className={styles.loggbtn}>logout</button> : <button onClick={() => signIn()} className={styles.loggbtn}>login</button>}</btb>
+        <span>Buy</span>
+        <span>Sell</span>
+          <span>Editorial</span>
+          <AiFillMail />
+          <AiOutlineUser />
+        <btb>{session?<button onClick={() => signOut()} className={styles.loggbtn}>logout</button> : <button onClick={() => signIn()} className={styles.loggbtn}>login</button>}</btb>
       </div>
     </div>
   )

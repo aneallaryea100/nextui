@@ -1,3 +1,6 @@
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    
 .meetAdvisorWrapper {
     background-color: aqua;
     margin: 3rem 3rem;
@@ -43,4 +46,6 @@
     background-position: right center;
     width: 70%;
     height: 20rem;
+}
+
 }
