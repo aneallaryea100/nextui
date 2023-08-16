@@ -31,7 +31,7 @@ function Footer() {
 
         <div className={styles.footerSubContainer}>
           <span className={styles.footerTextHead}>Support</span>
-          <span className={styles.footerTextlist}>Talk to Specialist</span>
+          <span className={styles.footerTextlist}>Talk to a Specialist</span>
           <span className={styles.footerTextlist}>Visit our Help Center</span>
           <span className={styles.footerTextlist}>Buying on Tribals</span>
         </div>
@@ -49,10 +49,13 @@ function Footer() {
         </div>
         <div className={styles.subFooterSocial}>
           <div className={styles.subFooterContainerLogo22}><span className={styles.subFooterContainerLogo2}>Tribals</span></div>
-          <BsSpotify />
-          <BsPinterest />
-          <BsMeta />
-          <BsInstagram />
+          <div className={styles.subFooterSocialsocial}>
+            <BsSpotify />
+            <BsPinterest />
+            <BsMeta />
+            <BsInstagram />
+          </div>
+          
         </div>
       </div>
     </div>

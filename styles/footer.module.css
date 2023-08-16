@@ -9,6 +9,7 @@
     
     .footerContainer {
         display: flex;
+        flex-direction: row !important;
         justify-content: space-around;
         width: 80%;
         padding: 3rem 0;
@@ -30,11 +31,12 @@
     }
     
     .subFooterContainer {
-        border-top: 1px solid gray;
-        padding: 1.5rem 2rem;
+        /* padding: 1.5rem 2rem; */
         display: flex;
+        flex-direction: row !important;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
     
     .subFooterContainerList {
@@ -46,16 +48,36 @@
     .subFooterDiv1 {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        justify-content: space-evenly !important;
+        border-bottom:  none !important;
+        margin: 1rem 0rem;
+        padding: 0.5rem 1rem !important;
+        width: 80% !important;
     }
     
     .subFooterSocial {
         display: flex;
+        justify-content: center !important;
         gap: 1rem;
+        justify-content: space-evenly;
+        width: 20% !important;
+    }
+
+    .subFooterSocialsocial{
+        display: flex;
+        justify-content: space-between;
+        width: 50% !important;
+        font-weight: 600;
+    }
+
+    .subFooterContainerLogo1 {
+        display: block !important;
+        font-weight: bolder;
+        font-size: larger;
     }
 
     .subFooterContainerLogo22 {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -66,20 +88,22 @@
 
 
  /**************** mobile or default view ***************/
- @media only screen and (max-width: 600px) {
+
     .footerWrapper {
         width: 100%;
-        margin: 3rem 0rem 0rem 0rem;
+        /* margin: 3rem 0rem 0rem 0rem; */
         border-top: 0.002rem solid gray;
         border-bottom: 0.002rem solid gray;
     }
     
     .footerContainer {
         display: flex;
+        flex-wrap: wrap-reverse;
         justify-content: space-around;
         flex-direction: column;
+        gap: 1.2rem;
         width: 100%;
-        padding: 3rem 0;
+        padding: 3rem 1.5rem;
     }
     
     .footerSubContainer {
@@ -99,11 +123,11 @@
     
     .subFooterContainer {
         border-top: 1px solid gray;
-        padding: 1.5rem 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
     
     .subFooterContainerList {
@@ -115,18 +139,38 @@
     
     .subFooterDiv1 {
         display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
         align-items: center;
         width: 100%;
+        border-bottom: 1px solid green;
+        margin: 1rem 0rem;
+        /* padding: 0.5rem 0rem; */
     }
     
     .subFooterSocial {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
         width: 100%;
+    }
+
+    .subFooterSocialsocial{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        font-size: 1.3rem;
     }
     
     .subFooterContainerLogo1 {
         display: none;
     }
- }
+
+    .subFooterContainerLogo22 {
+        display: block;
+        font-weight: bolder;
+        font-size: larger;
+    }
+
  

@@ -1,3 +1,4 @@
+/* desktop view */
 @media screen and (min-width: 1024px){
     .featuredContainer {
         margin: 3rem auto;
@@ -11,15 +12,16 @@
     }
     
     .artistContainer {
-        width: 95.99%;
+        width: 95.99% !important;
         display: flex;
+        flex-direction: row !important;
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
     }
     
     .artistContainerList {
-        width: 23.99%;
+        width: 23.99% !important;
     }
     
     

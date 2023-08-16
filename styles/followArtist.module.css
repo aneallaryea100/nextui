@@ -1,23 +1,46 @@
-.artistWrapperContainer {
-    margin: 2rem 3rem;
-    /* padding: 0.5rem; */
-    position: relative;
+/* Desktop view */
+@media screen and (min-width: 1024px){
+    .artistWrapperContainer {
+        margin: 2rem 3rem;
+        /* padding: 0.5rem; */
+        position: relative;
+    }
+    
+    .artistBoxContainer {
+        width: 22rem !important;
+        height: 20rem !important;
+        margin: 0rem 2rem;
+    }
+    
+    .artistTextBoxContainer {
+        width: 25rem;
+        height: 5rem;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 0.9rem;
+    }
+    
 }
 
-.followArtistHead {
-    margin: 1rem 0rem;
+/* mobile view */
+.caroueslDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .artistBoxContainer {
-    width: 25rem;
+    width: 15rem;
     height: 20rem;
     margin: 0rem 2rem;
 }
 
 .artistImageBoxContainer {
     background-color: rgb(8, 19, 122);
-    width: 25rem;
-    height: 15rem;
+    width: 100%;
+    height: 70%;
 }
 
 .artistImageBoxContainer img {
@@ -26,12 +49,21 @@
 }
 
 .artistTextBoxContainer {
-    width: 25rem;
-    height: 5rem;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 0rem 0.9rem;
+    text-align: center;
+}
+
+.followArtistHead {
+    margin: 1rem 1rem;
+}
+
+.caroueslDiv {
+    padding: 0.5rem;
+    width: 100%;
 }
 
 .artistfollowBtn {
@@ -45,26 +77,30 @@
 
 
 .arrowBtn {
-    background: lightyellow;
+    background: rgb(236, 236, 215);
     border-radius: 13rem;
-    width: 3rem;
+    width: 3.5rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    text-align: center;
     cursor: pointer;
     display: none;
 }
 
 .arrowBtnleft {
-    
     left: 2rem;
+    text-align: center;
+    padding-top: 0.2rem;
+    padding-right: 0.15rem;
+    font-size: 1.2rem;
 }
 
 .arrowBtnright {
-    
     right: 2rem;
+    text-align: center;
+    padding-top: 0.2rem;
+    font-size: 1.2rem;
 }
 
 .artistWrapperContainer:hover .arrowBtn {
