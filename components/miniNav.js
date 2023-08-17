@@ -1,9 +1,16 @@
+import React, { useState, useEffect } from 'react';
 import styles from '@styles/miniNav.module.css'
 import { signIn, signOut, useSession } from "next-auth/react";
 import { AiOutlineSearch, AiOutlineUser, AiFillMail } from "react-icons/ai";
 
 function MiniNavbar() {
   const {data: session} = useSession();
+  const[isUserProfileOpen, setIsUserProfileOpen] = useState(false);
+
+  const toggleUserProfile = () => {
+    setIsUserProfileOpen(!isUserProfileOpen);
+  }
+
   return (
     <div className={styles.miniNavContainer}>
       <div className={styles.inputSearchDiv}>
@@ -15,8 +22,18 @@ function MiniNavbar() {
         <span>Sell</span>
           <span>Editorial</span>
           <AiFillMail />
-          <AiOutlineUser />
-        <btb>{session?<button onClick={() => signOut()} className={styles.loggbtn}>logout</button> : <button onClick={() => signIn()} className={styles.loggbtn}>login</button>}</btb>
+          <span onClick={toggleUserProfile}><AiOutlineUser /></span>
+          {
+            isUserProfileOpen && (
+              <div className={styles.subProfileMenu}>
+                <btb>{session?<button onClick={() => signOut()} className={styles.loggbtn}>logout</button> : <button onClick={() => signIn()} className={styles.loggbtn}>login</button>}</btb>
+              <span>settings</span>
+              <span>Profile</span>
+              </div>
+              
+            )
+          }
+        
       </div>
     </div>
   )

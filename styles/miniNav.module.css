@@ -11,7 +11,7 @@
     
     .inputSearchDiv {
         width: 50%;
-        display: flex;
+        display: flex !important;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #000;
@@ -58,12 +58,13 @@
     }
 
     .inputSearchDiv {
-        width: 100%;
+        /* width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #000;
-        color: #000;
+        color: #000; */
+        display: none;
     }
 
     .inputSearchTexts {
@@ -77,5 +78,18 @@
 
    .acountSearchProfile {
      display: none;
+   }
+
+   .subProfileMenu {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    position: absolute;
+    width: 7rem;
+    right: 0.5rem;
+    top: 6rem;
    }
   
