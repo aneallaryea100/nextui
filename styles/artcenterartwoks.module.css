@@ -1,0 +1,70 @@
+.artcenterartworkswrapper {
+    width: 100%;
+    /* display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
+    padding: 0.8rem; */
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    background: #000;
+}
+
+.artcenterartworkscontainer {
+    background-color: #1282a3;
+    cursor: pointer;
+    width: 33.33%;
+}
+
+.artcenterartworksImageDiv {
+    width: 100%;
+    /* position: relative;
+    overflow: hidden;
+    display: block; */
+}
+ 
+
+.artcenterartworksImage {
+    /* width: 100%; */
+}
+
+.artcenterartworksTextBox {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.artcenterartworksNameHeart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.artcenterartworkslikebtn {
+    padding-left: 2rem;
+    font-size: large;
+}
+
+.artcenterartworksName {
+    font-weight: bolder;
+}
+
+.artcenterartworkssubdescribe {
+    font-style: italic;
+    color: darkgray;
+    font-weight: 600;
+}
+
+.artcenterartworkssubtitle {
+    font-style: normal;
+    color: darkgray;
+    font-weight: 700;
+}
+
+.artcenterartworksprice {
+    font-weight: bold;
+}
+
+.fillHeart {
+    color: blueviolet;
+}

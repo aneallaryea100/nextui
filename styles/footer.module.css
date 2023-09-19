@@ -2,7 +2,7 @@
 @media screen and (min-width: 1024px) {
     .footerWrapper {
         width: 100%;
-        margin: 3rem 0rem 0rem 0rem;
+        /* margin: 3rem 0rem 0rem 0rem; */
         border-top: 0.002rem solid gray;
         border-bottom: 0.002rem solid gray;
     }
@@ -94,6 +94,9 @@
         /* margin: 3rem 0rem 0rem 0rem; */
         border-top: 0.002rem solid gray;
         border-bottom: 0.002rem solid gray;
+        
+        bottom: 0;
+        left: 0;
     }
     
     .footerContainer {

@@ -1,0 +1,34 @@
+/* destop view*/
+@media screen and (min-width: 1024px) {
+    .artworkLength {
+        display: block !important;
+    }
+}
+
+.wrapperArtCenterFilter {
+    margin: 2rem 2rem;
+    padding: 1rem;
+}
+
+.navbarArtcenterFilter {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+}
+
+.navbarArtcenterFilter1 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.artworkLength {
+    display: none;
+}
+
+.artcenterAccordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 15%; */
+}

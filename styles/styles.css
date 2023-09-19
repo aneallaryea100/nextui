@@ -10,6 +10,7 @@ html {
 
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
       font-family: 'Poppins', sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      padding-top: 1rem;
   }
 
   /* Desktop view */
@@ -137,6 +139,12 @@ body {
     font-size: large;
     font-family: 'Bodoni Moda', serif;
     border-radius: 0.5rem;
+  }
+
+  @media screen and (min-width: 1024px){
+    body {
+      padding-top: 6.6rem;
+    }
   }
 
   

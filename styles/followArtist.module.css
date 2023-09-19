@@ -6,41 +6,68 @@
         position: relative;
     }
     
-    .artistBoxContainer {
-        width: 22rem !important;
+    /* .artistBoxContainer {
+        width: 30rem !important;
         height: 20rem !important;
         margin: 0rem 2rem;
-    }
+    } */
     
-    .artistTextBoxContainer {
-        width: 25rem;
+    /* .artistTextBoxContainer {
+        width: 100%;
         height: 5rem;
         display: flex;
         flex-direction: row !important;
         justify-content: space-between;
         align-items: center;
         padding: 0rem 0.9rem;
-    }
+    } */
     
 }
 
 /* mobile view */
-.caroueslDiv {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.artistWrapperContainer {
+    margin-bottom: 5rem; 
+    position: relative;
 }
 
+.caroueslDiv {
+    display: flex;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.caroueslDiv::-webkit-scrollbar {
+    margin: 1rem 0rem;
+    height: 0.5rem;
+    border: 1rem solid gray;
+
+}
+
+.caroueslDiv::-webkit-scrollbar-track {
+    box-shadow: rgb(94, 92, 84);
+  }
+
+  .caroueslDiv::-webkit-scrollbar-thumb {
+    background-color: #000;
+    outline: 1px solid slategrey;
+    margin: 1.8rem 0rem;
+  }
+
 .artistBoxContainer {
-    width: 15rem;
+    width:30rem !important;
     height: 20rem;
     margin: 0rem 2rem;
+    /* scroll-snap-align: start; */
 }
 
 .artistImageBoxContainer {
     background-color: rgb(8, 19, 122);
     width: 100%;
-    height: 70%;
+    height: 80%;
 }
 
 .artistImageBoxContainer img {
@@ -49,22 +76,23 @@
 }
 
 .artistTextBoxContainer {
+    width: 19rem;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem 0.5rem; */
+}
+
+.artistTextBoxIdentity h3 {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0rem 0.9rem;
-    text-align: center;
 }
 
 .followArtistHead {
     margin: 1rem 1rem;
 }
 
-.caroueslDiv {
-    padding: 0.5rem;
-    width: 100%;
-}
 
 .artistfollowBtn {
     width: 8rem;
@@ -76,33 +104,6 @@
 }
 
 
-.arrowBtn {
-    background: rgb(236, 236, 215);
-    border-radius: 13rem;
-    width: 3.5rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    cursor: pointer;
-    display: none;
-}
-
-.arrowBtnleft {
-    left: 2rem;
-    text-align: center;
-    padding-top: 0.2rem;
-    padding-right: 0.15rem;
-    font-size: 1.2rem;
-}
-
-.arrowBtnright {
-    right: 2rem;
-    text-align: center;
-    padding-top: 0.2rem;
-    font-size: 1.2rem;
-}
-
 .artistWrapperContainer:hover .arrowBtn {
     display: block;
 }
@@ -110,4 +111,29 @@
 .artistfollowBtn:hover {
     background-color: black;
     color: #fff;
+}
+
+.controls {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    visibility: hidden;
+}
+
+.artistWrapperContainer:hover .controls {
+    visibility: visible;
+}
+
+.controls > * {
+    width: 3rem;
+    font-size: 3.5rem;
+    color: rgb(94, 98, 222);
+    background: transparent;
+    border-radius: 3rem;
+    border: 0;
+    cursor: pointer;
 }
