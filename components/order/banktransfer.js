@@ -1,11 +1,6 @@
 import { AiOutlineSearch } from "react-icons/ai";
-import { useEffect } from "react";
 
 function Banktransfer() {
-
-  useEffect(() => {
-    console.log(bankImages, "bankImages")
-  })
 
   const bankImages = [
       '../../images/boa.png',
@@ -48,9 +43,9 @@ function Banktransfer() {
       <div className="bankcards mt-5 w-full grid grid-cols-3 gap-2 p-2">
         {/* <div className="w-100 h-60 bg-blue-800"></div> */}
         {bankImages.map((banks, index) => (
-          <div key={index} className="h-36 shadow-sm p-2 hover:bg-blend-lighten flex justify-center items-center cursor-pointer">
+          <div key={index} className="h-36 relative  shadow-sm p-2 hover:bg-blend-lighten flex justify-center items-center cursor-pointer">
             <div className="w-1/2 h-2/5 md:w-2/3 ">
-                <img src={banks} alt="gg"  className="w-full"/>
+                <img src={banks} alt="gg"  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-full max-h-full"/>
             </div>
           </div>
         ))}

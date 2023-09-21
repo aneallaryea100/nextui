@@ -12,7 +12,7 @@ function OrderDetails() {
     };
 
   return (
-    <div className='z-10 absolute top-0 w-full py-4 px-3'>
+    <div className='z-10 absolute top-0 w-full py-4 px-5'>
         <div className='mt-5'>
             <div className="logo">
                 <Link href='/'>

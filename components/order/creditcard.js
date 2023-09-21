@@ -27,9 +27,9 @@ function Creditcard() {
   return (
     <div className='creditCardWrapper'>
       <span className='text-sm'>Credit card*</span>
-      <div className='flex'>
-        <div className="flex flex-col  gap-3 w-full border-b-2 border-gray-800 py-2 md:flex-row">
-          <span className="flex items-center gap-2 w-3/5">
+      <div className='flex w-full'>
+        <div className="flex gap-3 w-full border-b-2 border-gray-800 py-2 md:flex-row">
+          <span className="flex items-center gap-2 w-full">
             <AiOutlineCreditCard />
             <input
              type='text'placeholder='card number'
@@ -37,24 +37,26 @@ function Creditcard() {
               onChange={handleCardNumberChange}
               className="appearance-none focus:outline-none w-full"/>
           </span>
+          <span className="flex gap-0">
+              <input
+            type="text"
+            placeholder="MM/YY"
+            maxLength={5}
+            id="expiration"
+            value={expiration}
+            onChange={handleExpirationChange}
+            className="appearance-none focus:outline-none w-20"/>
 
-          <input
-           type="text"
-           placeholder="MM/YY"
-           maxLength={5}
-           id="expiration"
-          value={expiration}
-          onChange={handleExpirationChange}
-           className="appearance-none focus:outline-none w-1/15"/>
-
-          <input
-           type="text" 
-           placeholder="CVV" 
-           maxLength={4} 
-           id="cvc"
-           value={cvc}
-           onChange={handleCvcChange}
-           className="appearance-none focus:outline-none w-1/5"/>
+            <input
+            type="text" 
+            placeholder="CVV" 
+            maxLength={4} 
+            id="cvc"
+            value={cvc}
+            onChange={handleCvcChange}
+            className="appearance-none focus:outline-none w-20"/>
+          </span>
+         
         </div>  
       </div>
     </div>
