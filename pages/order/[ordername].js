@@ -1,10 +1,14 @@
 import { useState } from "react"
+import { useRouter } from 'next/router';
 import Link from "next/link"
 import Shipping from "@components/order/shipping";
 import Payment from "@components/order/payment";
 import Review from "@components/order/review";
 
 function OrderDetails() {
+    const router = useRouter();
+    const { orderName } = router.query;
+
     const [activeTab, setActiveTab] = useState("shipping");
 
     const handleTabClick = (tab) => {

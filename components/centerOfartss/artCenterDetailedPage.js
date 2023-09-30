@@ -1,10 +1,18 @@
 import React from 'react'
 import styles from "@styles/artCenterDetails.module.css"
+import { useRouter } from 'next/router'
 import { AiOutlineBell } from "react-icons/ai";
 import ArtCenterAboutTheWork from './artCenterAboutTheWork';
 import ArtCenterOtherWorks from './artCenterOtherWorks';
 
 function ArtCenterDetailedPage({ artDetails }) {
+    const router = useRouter()
+
+    const handlePurchaseLink = () => {
+        console.log('purchase link clicked')
+        router.push(`/order/${artDetails.name}`)
+    }
+
   return (
     <div className={styles.artcenterDetailWrapper}>
         <div className={styles.artcenterDetailContainer}>
@@ -19,9 +27,9 @@ function ArtCenterDetailedPage({ artDetails }) {
                 <span>{artDetails.artsize}</span>
                  {artDetails.uniquework ? <span>Unique Work</span> : ""}
                  {artDetails.authCertificate ? <span>Includes a Certificate of Authenticity</span> : ""}
-                <span>${artDetails.price}</span>
+                <span className='font-bold text-2xl'>${artDetails.price}</span>
                 <div className={styles.artcenterDetailBtns}>
-                    <button className={styles.artcenterDetailBtnsPurchase}>Purchase</button>
+                    <button onClick={handlePurchaseLink} className={styles.artcenterDetailBtnsPurchase}>Purchase</button>
                     <button className={styles.artcenterDetailBtnsOffer}>Make an Offer</button>
                 </div>
             </div>
