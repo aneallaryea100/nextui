@@ -4,10 +4,13 @@ import Link from "next/link"
 import Shipping from "@components/order/shipping";
 import Payment from "@components/order/payment";
 import Review from "@components/order/review";
+import ArtCenterSectionTwoArtWorksData from "@localDatabase/Data/centerArtSection2Artworks";
 
-function OrderDetails() {
+function OrderDetails({artworks}) {
     const router = useRouter();
-    const { orderName } = router.query;
+    const {ordername} = router.query;
+
+    // const artWorks = artworks.find((art) => art.name === centerofartname);
 
     const [activeTab, setActiveTab] = useState("shipping");
 
@@ -44,9 +47,9 @@ function OrderDetails() {
             </div>
 
             <div className="mt-5">
-                {activeTab === 'shipping' && <div><Shipping /></div>}
-                {activeTab === 'payment' && <div><Payment /></div>}
-                {activeTab === 'review' && <div><Review /></div>}
+                {activeTab === 'shipping' && <div><Shipping artworks={artworks}/></div>}
+                {activeTab === 'payment' && <div><Payment artworks={artworks}/></div>}
+                {activeTab === 'review' && <div><Review artworks={artworks}/></div>}
             </div>
         </div>
     </div>
@@ -54,3 +57,21 @@ function OrderDetails() {
 }
 
 export default OrderDetails
+
+
+export async function getStaticProps({ params }) {
+    const ordername = params.ordername;
+    const artworks = ArtCenterSectionTwoArtWorksData.find(
+      (art) => art.name === ordername
+    );
+  
+    return { props: { artworks } };
+  }
+
+  export async function getStaticPaths() {
+    const paths = ArtCenterSectionTwoArtWorksData.map((artwork) => ({
+      params: { ordername: artwork.name },
+    }));
+  
+    return { paths, fallback: false };
+  }
