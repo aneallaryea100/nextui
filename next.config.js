@@ -14,5 +14,13 @@ module.exports = {
         },
       ],
     },
-    
+    // async redirects() {
+    //   return [
+    //     {
+    //       source: '/centerofart/:relatedWorkTitle',
+    //       destination: '/centerofart/[centerofartname]',
+    //       permanent: true,
+    //     },
+    //   ];
+    // },
   }

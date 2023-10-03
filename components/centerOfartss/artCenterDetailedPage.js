@@ -3,7 +3,7 @@ import styles from "@styles/artCenterDetails.module.css"
 import { useRouter } from 'next/router'
 import { AiOutlineBell } from "react-icons/ai";
 import ArtCenterAboutTheWork from './artCenterAboutTheWork';
-import ArtCenterOtherWorks from './artCenterOtherWorks';
+//import ArtCenterOtherWorks from './artCenterOtherWorks';
 
 function ArtCenterDetailedPage({ artDetails }) {
     const router = useRouter()
@@ -95,8 +95,6 @@ function ArtCenterDetailedPage({ artDetails }) {
             </div>
         </div>  
         <ArtCenterAboutTheWork aboutwork={artDetails}/> 
-        <ArtCenterOtherWorks otherWorks={artDetails}/>  
-        
     </div>
   )
 }

@@ -10,7 +10,7 @@ const ArtCenterOneData = [
         "description": "The description of arts",
         "relatedWorks": [
             {
-                "title": "amazing Graces",
+                "title": "self1",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://loremflickr.com/320/240",
                 "price": 1025,
@@ -19,7 +19,7 @@ const ArtCenterOneData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "title": "self2",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://loremflickr.com/320/240",
                 "price": 1025,
@@ -28,7 +28,7 @@ const ArtCenterOneData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "title": "self3",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://loremflickr.com/320/240",
                 "price": 1025,
@@ -37,7 +37,7 @@ const ArtCenterOneData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "title": "self4",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://loremflickr.com/320/240",
                 "price": 1025,
@@ -46,7 +46,7 @@ const ArtCenterOneData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "title": "self5",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://loremflickr.com/320/240",
                 "price": 1025,
@@ -55,7 +55,7 @@ const ArtCenterOneData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "title": "self6",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://loremflickr.com/320/240",
                 "price": 1025,
@@ -64,7 +64,7 @@ const ArtCenterOneData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "title": "self7",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://loremflickr.com/320/240",
                 "price": 1025,

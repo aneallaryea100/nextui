@@ -21,7 +21,8 @@ const ArtCenterSectionTwoArtWorksData = [
         "material": "Giclée, screen-print, acrylic and oil paint, and varnish on paper",
         "relatedWorks": [
             {
-                "title": "amazing Graces",
+                "id": "001",
+                "name": "DarkTwisted1",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/food",
                 "price": 1025,
@@ -30,7 +31,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "002",
+                "name": "DarkTwisted2",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/smile",
                 "price": 1025,
@@ -39,7 +41,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "003",
+                "name": "DarkTwisted3",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/happy",
                 "price": 1025,
@@ -48,7 +51,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "004",
+                "name": "DarkTwisted4",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/beach",
                 "price": 1025,
@@ -57,7 +61,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "005",
+                "name": "DarkTwisted5",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/trees",
                 "price": 1025,
@@ -66,7 +71,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "006",
+                "name": "DarkTwisted6",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/snow",
                 "price": 1025,
@@ -75,7 +81,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "007",
+                "name": "DarkTwisted7",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/culture",
                 "price": 1025,
@@ -84,11 +91,11 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             }
         ],
-        "about":`Amoako Boafo’s luminous portraits make and hold space for Black joy, subjectivity, and self-determination. The artist highlights his subjects’ complexity with his own tender touch; he uses his fingers to paint their unique gazes, poses, and dress. Boafo was as an artist in residence at the Rubell Museum in 2019. The next year, he was featured in The Artsy Vanguard 2020 and the Artsy Editorial piece “The Most Influential Artists of 2020” after he made an astounding secondary-market debut: His stylish portrait The Lemon Bathing Suit (2019) sold for £675,000 ($875,000) at Phillips London. His work has since sold for more than $1 million and been acquired for the collections of the Guggenheim Museum, the Los Angeles County Museum of Art, and the Albertina Museum.`
+        "about":`DarkTwisted’s luminous portraits make and hold space for Black joy, subjectivity, and self-determination. The artist highlights his subjects’ complexity with his own tender touch; he uses his fingers to paint their unique gazes, poses, and dress. Boafo was as an artist in residence at the Rubell Museum in 2019. The next year, he was featured in The Artsy Vanguard 2020 and the Artsy Editorial piece “The Most Influential Artists of 2020” after he made an astounding secondary-market debut: His stylish portrait The Lemon Bathing Suit (2019) sold for £675,000 ($875,000) at Phillips London. His work has since sold for more than $1 million and been acquired for the collections of the Guggenheim Museum, the Los Angeles County Museum of Art, and the Albertina Museum.`
     },
     {
         "id": "2",
-        "name":"Self beliefs",
+        "name":"Shelvy",
         "image":"https://source.unsplash.com/random/umbrella",
         "address":"3025 W 4th St, San Francisco CA 94107",
         "phone_number":"+86-415-238-8888",
@@ -107,7 +114,8 @@ const ArtCenterSectionTwoArtWorksData = [
         "material": "Giclée, screen-print, acrylic and oil paint, and varnish on paper",
         "relatedWorks": [
             {
-                "title": "amazing Graces",
+                "id": "001",
+                "name":"Shelvy1",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/food",
                 "price": 1025,
@@ -116,7 +124,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "002",
+                "name":"Shelvy2",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/smile",
                 "price": 1025,
@@ -125,7 +134,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "003",
+                "name":"Shelvy3",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/happy",
                 "price": 1025,
@@ -134,7 +144,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "004",
+                "name":"Shelvy4",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/beach",
                 "price": 1025,
@@ -143,7 +154,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "005",
+                "name":"Shelvy5",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/trees",
                 "price": 1025,
@@ -152,7 +164,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "006",
+                "name":"Shelvy6",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/snow",
                 "price": 1025,
@@ -161,7 +174,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "007",
+                "name":"Shelvy7",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/culture",
                 "price": 1025,
@@ -170,11 +184,11 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             }
         ],
-        "about":`Amoako Boafo’s luminous portraits make and hold space for Black joy, subjectivity, and self-determination. The artist highlights his subjects’ complexity with his own tender touch; he uses his fingers to paint their unique gazes, poses, and dress. Boafo was as an artist in residence at the Rubell Museum in 2019. The next year, he was featured in The Artsy Vanguard 2020 and the Artsy Editorial piece “The Most Influential Artists of 2020” after he made an astounding secondary-market debut: His stylish portrait The Lemon Bathing Suit (2019) sold for £675,000 ($875,000) at Phillips London. His work has since sold for more than $1 million and been acquired for the collections of the Guggenheim Museum, the Los Angeles County Museum of Art, and the Albertina Museum.`
+        "about":`Shelvy’s luminous portraits make and hold space for Black joy, subjectivity, and self-determination. The artist highlights his subjects’ complexity with his own tender touch; he uses his fingers to paint their unique gazes, poses, and dress. Boafo was as an artist in residence at the Rubell Museum in 2019. The next year, he was featured in The Artsy Vanguard 2020 and the Artsy Editorial piece “The Most Influential Artists of 2020” after he made an astounding secondary-market debut: His stylish portrait The Lemon Bathing Suit (2019) sold for £675,000 ($875,000) at Phillips London. His work has since sold for more than $1 million and been acquired for the collections of the Guggenheim Museum, the Los Angeles County Museum of Art, and the Albertina Museum.`
     },
     {
         "id": "3",
-        "name":"The Believers",
+        "name":"Believers",
         "image":"https://source.unsplash.com/random/farm",
         "address":"3025 W 4th St, San Francisco CA 94107",
         "phone_number":"+86-415-238-8888",
@@ -193,7 +207,8 @@ const ArtCenterSectionTwoArtWorksData = [
         "material": "Giclée, screen-print, acrylic and oil paint, and varnish on paper",
         "relatedWorks": [
             {
-                "title": "amazing Graces",
+                "id": "001",
+                "name":"Believers1",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/food",
                 "price": 1025,
@@ -202,7 +217,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "002",
+                "name":"Believers2",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/smile",
                 "price": 1025,
@@ -211,7 +227,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "003",
+                "name":"Believers3",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/happy",
                 "price": 1025,
@@ -220,7 +237,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "004",
+                "name":"Believers4",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/beach",
                 "price": 1025,
@@ -229,7 +247,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "005",
+                "name":"Believers5",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/trees",
                 "price": 1025,
@@ -238,7 +257,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "006",
+                "name":"Believers6",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/snow",
                 "price": 1025,
@@ -247,7 +267,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "007",
+                "name":"Believers7",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/culture",
                 "price": 1025,
@@ -256,11 +277,11 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             }
         ],
-        "about":`Amoako Boafo’s luminous portraits make and hold space for Black joy, subjectivity, and self-determination. The artist highlights his subjects’ complexity with his own tender touch; he uses his fingers to paint their unique gazes, poses, and dress. Boafo was as an artist in residence at the Rubell Museum in 2019. The next year, he was featured in The Artsy Vanguard 2020 and the Artsy Editorial piece “The Most Influential Artists of 2020” after he made an astounding secondary-market debut: His stylish portrait The Lemon Bathing Suit (2019) sold for £675,000 ($875,000) at Phillips London. His work has since sold for more than $1 million and been acquired for the collections of the Guggenheim Museum, the Los Angeles County Museum of Art, and the Albertina Museum.`
+        "about":`Believers’s luminous portraits make and hold space for Black joy, subjectivity, and self-determination. The artist highlights his subjects’ complexity with his own tender touch; he uses his fingers to paint their unique gazes, poses, and dress. Boafo was as an artist in residence at the Rubell Museum in 2019. The next year, he was featured in The Artsy Vanguard 2020 and the Artsy Editorial piece “The Most Influential Artists of 2020” after he made an astounding secondary-market debut: His stylish portrait The Lemon Bathing Suit (2019) sold for £675,000 ($875,000) at Phillips London. His work has since sold for more than $1 million and been acquired for the collections of the Guggenheim Museum, the Los Angeles County Museum of Art, and the Albertina Museum.`
     },
     {
         "id": "4",
-        "name":"The Natives",
+        "name":"Natives",
         "image":"https://source.unsplash.com/random/streets",
         "address":"3025 W 4th St, San Francisco CA 94107",
         "phone_number":"+86-415-238-8888",
@@ -279,7 +300,8 @@ const ArtCenterSectionTwoArtWorksData = [
         "material": "Giclée, screen-print, acrylic and oil paint, and varnish on paper",
         "relatedWorks": [
             {
-                "title": "amazing Graces",
+                "id": "001",
+                "name":"Natives1",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/food",
                 "price": 1025,
@@ -288,7 +310,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "002",
+                "name":"Natives2",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/smile",
                 "price": 1025,
@@ -297,7 +320,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "003",
+                "name":"Natives3",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/happy",
                 "price": 1025,
@@ -306,7 +330,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "004",
+                "name":"Natives4",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/beach",
                 "price": 1025,
@@ -315,7 +340,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "005",
+                "name":"Natives5",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/trees",
                 "price": 1025,
@@ -324,7 +350,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "006",
+                "name":"Natives6",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/snow",
                 "price": 1025,
@@ -333,7 +360,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "007",
+                "name":"Natives7",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/culture",
                 "price": 1025,
@@ -342,7 +370,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             }
         ],
-        "about":`Amoako Boafo’s luminous portraits make and hold space for Black joy, subjectivity, and self-determination. The artist highlights his subjects’ complexity with his own tender touch; he uses his fingers to paint their unique gazes, poses, and dress. Boafo was as an artist in residence at the Rubell Museum in 2019. The next year, he was featured in The Artsy Vanguard 2020 and the Artsy Editorial piece “The Most Influential Artists of 2020” after he made an astounding secondary-market debut: His stylish portrait The Lemon Bathing Suit (2019) sold for £675,000 ($875,000) at Phillips London. His work has since sold for more than $1 million and been acquired for the collections of the Guggenheim Museum, the Los Angeles County Museum of Art, and the Albertina Museum.`
+        "about":`Natives’s luminous portraits make and hold space for Black joy, subjectivity, and self-determination. The artist highlights his subjects’ complexity with his own tender touch; he uses his fingers to paint their unique gazes, poses, and dress. Boafo was as an artist in residence at the Rubell Museum in 2019. The next year, he was featured in The Artsy Vanguard 2020 and the Artsy Editorial piece “The Most Influential Artists of 2020” after he made an astounding secondary-market debut: His stylish portrait The Lemon Bathing Suit (2019) sold for £675,000 ($875,000) at Phillips London. His work has since sold for more than $1 million and been acquired for the collections of the Guggenheim Museum, the Los Angeles County Museum of Art, and the Albertina Museum.`
     },
     {
         "id": "5",
@@ -365,6 +393,7 @@ const ArtCenterSectionTwoArtWorksData = [
         "material": "Giclée, screen-print, acrylic and oil paint, and varnish on paper",
         "relatedWorks": [
             {
+                "id": "001",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/food",
@@ -374,6 +403,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "002",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/smile",
@@ -383,6 +413,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "003",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/happy",
@@ -392,6 +423,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "004",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/beach",
@@ -401,6 +433,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "005",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/trees",
@@ -410,6 +443,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "006",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/snow",
@@ -419,6 +453,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "007",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/culture",
@@ -451,7 +486,8 @@ const ArtCenterSectionTwoArtWorksData = [
         "material": "Giclée, screen-print, acrylic and oil paint, and varnish on paper",
         "relatedWorks": [
             {
-                "title": "amazing Graces",
+                "id": "001",
+                "title": "derakin1",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/food",
                 "price": 1025,
@@ -460,7 +496,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "002",
+                "title": "derakin2",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/smile",
                 "price": 1025,
@@ -469,7 +506,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "003",
+                "title": "derakin3",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/happy",
                 "price": 1025,
@@ -478,7 +516,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "004",
+                "title": "derakin4",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/beach",
                 "price": 1025,
@@ -487,7 +526,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "005",
+                "title": "derakin5",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/trees",
                 "price": 1025,
@@ -496,7 +536,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "006",
+                "title": "derakin6",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/snow",
                 "price": 1025,
@@ -505,7 +546,8 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
-                "title": "amazing Graces",
+                "id": "007",
+                "title": "derakin7",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/culture",
                 "price": 1025,
@@ -537,6 +579,7 @@ const ArtCenterSectionTwoArtWorksData = [
         "material": "Giclée, screen-print, acrylic and oil paint, and varnish on paper",
         "relatedWorks": [
             {
+                "id": "001",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/food",
@@ -546,6 +589,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "002",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/smile",
@@ -555,6 +599,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "003",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/happy",
@@ -564,6 +609,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "004",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/beach",
@@ -573,6 +619,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "005",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/trees",
@@ -582,6 +629,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "006",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/snow",
@@ -591,6 +639,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "007",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/culture",
@@ -623,6 +672,7 @@ const ArtCenterSectionTwoArtWorksData = [
         "material": "Giclée, screen-print, acrylic and oil paint, and varnish on paper",
         "relatedWorks": [
             {
+                "id": "001",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/food",
@@ -632,6 +682,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "002",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/smile",
@@ -641,6 +692,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "003",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/happy",
@@ -650,6 +702,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "004",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/beach",
@@ -659,6 +712,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "005",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/trees",
@@ -668,6 +722,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "006",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/snow",
@@ -677,6 +732,7 @@ const ArtCenterSectionTwoArtWorksData = [
                 "unique": false
             },
             {
+                "id": "007",
                 "title": "amazing Graces",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/culture",
