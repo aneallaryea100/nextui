@@ -39,9 +39,7 @@ export default function SignPageLayout ({children}) {
 
     return (
         <div className={styles.layoutContainer}>
-               <div className={styles.imageContainer} style={backgroundImageStyle}>
-                   
-                </div>
+            <div className={styles.imageContainer} style={backgroundImageStyle}></div>
             <div className={styles.childrendiv}>{children}</div>
         </div>
     )

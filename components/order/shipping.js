@@ -1,8 +1,17 @@
+import { useEffect } from 'react';
 import Link from 'next/link'
 import { AiFillSafetyCertificate } from "react-icons/ai";
+import { useSession } from 'next-auth/react';
 import Image from 'next/image';
 
 function Shipping({artworks}) {
+
+  const {data: session} = useSession();
+
+  useEffect(() => {
+    console.log('session', session)
+    console.log('session name', session?.user?.name)
+  });
   const price = parseFloat(artworks.price);
   const formattedPrice = price.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2 });
   return (
@@ -12,7 +21,7 @@ function Shipping({artworks}) {
             <div className='w-full flex flex-col gap-3 md:w-1/2'>
               <div className='flex justify-between border-1 border-gray-200 p-3 mt-3'>
                       <div className='flex flex-col w-1/2 gap-2'>
-                          <span className='block font-semibold'>Kofi Mensah Mensah</span>
+                          <span className='block font-semibold'>{session?.user?.name}</span>
                           <span className='block line-clamp-4 md:w-3/5'>1234 Elm Street Springfield, Teshie 12345 Ghana</span>
                       </div>
                       <div>

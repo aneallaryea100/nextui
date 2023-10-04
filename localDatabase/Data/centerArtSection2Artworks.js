@@ -301,7 +301,7 @@ const ArtCenterSectionTwoArtWorksData = [
         "relatedWorks": [
             {
                 "id": "001",
-                "name":"Natives1",
+                "name":"Natives",
                 "subtitle": "The Last Supper (1999)",
                 "image": "https://source.unsplash.com/random/food",
                 "price": 1025,
