@@ -38,7 +38,7 @@ function ArtCenterArtWorks({artcenterartworks}) {
                             </div>
                             <h5 className={styles.artcenterartworkssubdescribe}>{data.subdescribe}</h5>
                             <p className={styles.artcenterartworkssubtitle}>{data.subtitle}</p>
-                            <span className={styles.artcenterartworksprice}>{`$ ${data.price}`}</span>
+                            <span className={styles.artcenterartworksprice}>{`$ ${parseFloat(data.price).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`}</span>
                         </div>
                     </div>
                     </Link>

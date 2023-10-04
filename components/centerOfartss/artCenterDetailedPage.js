@@ -27,7 +27,7 @@ function ArtCenterDetailedPage({ artDetails }) {
                 <span>{artDetails.artsize}</span>
                  {artDetails.uniquework ? <span>Unique Work</span> : ""}
                  {artDetails.authCertificate ? <span>Includes a Certificate of Authenticity</span> : ""}
-                <span className='font-bold text-2xl'>${artDetails.price}</span>
+                <span className='font-bold text-2xl'>{`$ ${parseFloat(artDetails.price).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`}</span>
                 <div className={styles.artcenterDetailBtns}>
                     <button onClick={handlePurchaseLink} className={styles.artcenterDetailBtnsPurchase}>Purchase</button>
                     <button className={styles.artcenterDetailBtnsOffer}>Make an Offer</button>

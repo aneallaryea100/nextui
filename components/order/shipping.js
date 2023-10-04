@@ -1,7 +1,10 @@
 import Link from 'next/link'
 import { AiFillSafetyCertificate } from "react-icons/ai";
+import Image from 'next/image';
 
 function Shipping({artworks}) {
+  const price = parseFloat(artworks.price);
+  const formattedPrice = price.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2 });
   return (
     <div className='p-2'>
       <span className='font-bold text-3xl'>Delivery Address</span>
@@ -24,17 +27,23 @@ function Shipping({artworks}) {
             <div className='flex flex-col gap-3 md:w-2/5'>
                 <div className='border-1 border-gray-200 flex flex-col divide-y divide-gray-200'>
                     <div className='flex flex-col p-3'>
-                      <span className='w-16 h-16 bg-orange-300'></span>
+                      <span className='w-16 h-16 bg-gray-300 p-1'>
+                        <img 
+                        src={`${artworks.image}`}
+                        alt={artworks.name}
+                        className='w-16 h-14'
+                        />
+                      </span>
                       <span className='font-semibold text-normal mt-2'>{artworks.name}</span>
                       <span className='italic text-gray-600'>Scratch & Riff: Hand-painted LPs, 2023</span>
                       <span className='bold text-gray-600'>Accra Central Gallery</span>
                       <span className='bold text-gray-600'>Greater Accra, AC, GH</span>
-                      <span className='font-semibold text-normal'>{`Price US$${artworks.price}.00`}</span>
+                      <span className='font-semibold text-normal'>{`Price US${formattedPrice}`}</span>
                     </div>
                     <div className='p-2 flex flex-col gap-1'>
                       <div className='flex justify-between text-gray-600 font-semibold mb-3'>
                         <span>Price</span>
-                        <span>{`US$${artworks.price}.00`}</span>
+                        <span>{`US${formattedPrice}`}</span>
                       </div>
 
                       <div className='flex justify-between text-gray-600 font-semibold'>

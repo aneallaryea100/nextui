@@ -4,16 +4,19 @@
 const webpack = require("webpack");
 
 module.exports = {
-    images: {
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'assets.example.com',
-          port: '',
-          pathname: '/account123/**',
-        },
-      ],
-    },
+  images: {
+    domains: ['source.unsplash.com'], // Add the domain(s) you want to allow here
+  },
+    // images: {
+    //   remotePatterns: [
+    //     {
+    //       protocol: 'https',
+    //       hostname: 'assets.example.com',
+    //       port: '',
+    //       pathname: '/account123/**',
+    //     },
+    //   ],
+    // },
     // async redirects() {
     //   return [
     //     {

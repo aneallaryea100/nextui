@@ -1,17 +1,11 @@
-import { useState } from "react"
-import { useRouter } from 'next/router';
-import Link from "next/link"
+import { useState } from "react";
+import Link from "next/link";
 import Shipping from "@components/order/shipping";
 import Payment from "@components/order/payment";
 import Review from "@components/order/review";
 import ArtCenterSectionTwoArtWorksData from "@localDatabase/Data/centerArtSection2Artworks";
 
 function OrderDetails({artworks}) {
-    const router = useRouter();
-    const {ordername} = router.query;
-
-    // const artWorks = artworks.find((art) => art.name === centerofartname);
-
     const [activeTab, setActiveTab] = useState("shipping");
 
     const handleTabClick = (tab) => {
