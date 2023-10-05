@@ -1,68 +1,69 @@
 import styles from '@styles/blogDisplay.module.css'
 
+
 function BlogDisplay() {
   return (
-    <div className={styles.blogDisplayContainerWrapper}>
-      <h2 className={styles.blogDisplayHeadText}>Tribals Editorial</h2>
-      <div className={styles.blogDisplayContentContainer}>
-        <div className={styles.blogDisplayContentrigthEdit}>
-            <div className={styles.blogDisplayContentImagery}>
-                <img src='images/fo.jpg' alt='editorial' className={styles.blogDisplayImagery}/>
+    <div className='container mt-5 p-2'>
+      <h2 className='font-semibold text-2xl text-dark my-1'>Tribals Editorial</h2>
+      <div className='blogDisplayContentContainer grid grid-cols-1 w-full gap-x-1 gap-y-4 md:grid-cols-2 md:gap-y-0' >
+        <div className='blogDisplayContentrigthEdit w-full h-96 md:h-screen'>
+            <div className="blogDisplayContentImagery w-full h-3/4 bg-black bg-[url('/images/fo.jpg')] bg-no-repeat bg-cover bg-center">
+                {/* <img src='images/fo.jpg' alt='editorial' className=''/> */}
             </div>
-            <div className={styles.blogDisplayContenttext}>
-                <span className={styles.blogDisplayContenttext1}>Center of Arts</span>
-                <span className={styles.blogDisplayContenttext11}>The Tribals Book of Arts: July 2023</span>
-                <span className={styles.blogDisplayContenttext2}>By Tribals Editorial</span>
-                <span className={styles.blogDisplayContenttext3}>15 July, 2023</span>
+            <div className='blogDisplayContenttext'>
+                <span className='font-semibold block'>Center of Arts</span>
+                <span className='font-bold text-2xl block'>The Tribals Book of Arts: July 2023</span>
+                <span className='italic font-semibold block'>By Tribals Editorial</span>
+                <span className='font-semibold block'>15 July, 2023</span>
             </div>
         </div>
         
-        <div className={styles.blogDisplayContentleftEdit}>
-            <div className={styles.blogDisplayContentleftBox}>
-                <div className={styles.blogDisplayContentleftImageBox}>
-                    <img src='images/asake.webp' alt='asake work of art' className={styles.blogDisplayimage}/>
+        <div className='blogDisplayContentleftEdit w-full grid grid-cols-1 grid-rows-1 gap-y-2 gap-x-2 md:grid-cols-2'>
+            <div className='blogDisplayContentleftBox w-full '>
+                <div className='blogDisplayContentleftImageBox h-64'>
+                    <img src='images/asake.webp' alt='asake work of art' className='w-full h-full'/>
                 </div>
-                <div className={`${styles.blogDisplayContentlefttextBox} ${styles.asake}`}>
-                    <span className={styles.blogDisplayContentlefttext1}>Art & Music</span>
-                    <span className={styles.blogDisplayContentlefttext2}>Inside the art and spirituality of Music</span>
-                    <span className={styles.blogDisplayContentlefttext3}>By Asake </span>
-                    <span className={styles.blogDisplayContentlefttext4}> July 8, 2023</span>
-                </div>
-            </div>
-
-            <div className={styles.blogDisplayContentleftBox}>
-                <div className={styles.blogDisplayContentleftImageBox}>
-                    <img src='images/blacko.jpg' alt='The villian I never was-blacksherif' className={styles.blogDisplayimage}/>
-                </div>
-                <div className={`${styles.blogDisplayContentlefttextBox} ${styles.blacko}`}>
-                    <span className={styles.blogDisplayContentlefttext1}>Art & Music</span>
-                    <span className={styles.blogDisplayContentlefttext2}>The Inspiration behind the Villian I never was.</span>
-                    <span className={styles.blogDisplayContentlefttext3}>By Black Sherif </span>
-                    <span className={styles.blogDisplayContentlefttext4}> August 18, 2023</span>
+                <div className='bg-orange-500 p-1 text-dark grid grid-cols-1 gap-0'>
+                    <span className='font-semibold block'>Art & Music</span>
+                    <span className='font-bold block text-xl'>Inside the art and spirituality of Music</span>
+                    <span className='italic font-semibold block'>By Asake </span>
+                    <span className='font-semibold block'> July 8, 2023</span>
                 </div>
             </div>
 
-            <div className={styles.blogDisplayContentleftBox}>
-                <div className={styles.blogDisplayContentleftImageBox}>
-                    <img src='images/stonebwoy.jpg' alt='stonebwoy- 5th dimension' className={styles.blogDisplayimage}/>
+            <div className='blogDisplayContentleftBox w-full'>
+                <div className='blogDisplayContentleftImageBox h-64'>
+                    <img src='images/blacko.jpg' alt='The villian I never was-blacksherif' className='w-full h-full'/>
                 </div>
-                <div className={`${styles.blogDisplayContentlefttextBox} ${styles.stonebwoy}`}>
-                    <span className={styles.blogDisplayContentlefttext1}>Art & Music</span>
-                    <span className={styles.blogDisplayContentlefttext2}>The 5th Dimension and Journey of Afrobeat.</span>
-                    <span className={styles.blogDisplayContentlefttext3}>By Stonebwoy </span>
-                    <span className={styles.blogDisplayContentlefttext4}> June 10, 2023</span>
+                <div className='bg-black text-white p-1 grid grid-cols-1 gap-0'>
+                    <span className='font-semibold block'>Art & Music</span>
+                    <span className='font-bold block text-xl'>The Inspiration behind the Villian I never was.</span>
+                    <span className='italic font-semibold block'>By Black Sherif </span>
+                    <span className='font-semibold block'> August 18, 2023</span>
                 </div>
             </div>
 
-            <div className={styles.blogDisplayContentleftBox}>
-                <div className={styles.blogDisplayContentleftImageBox}>
-                    <img src='images/titi.jpeg' alt='Titilope' className={styles.blogDisplayimage}/>
+            <div className='blogDisplayContentleftBox w-full'>
+                <div className='blogDisplayContentleftImageBox h-64'>
+                    <img src='images/stonebwoy.jpg' alt='stonebwoy- 5th dimension' className='w-full h-full'/>
                 </div>
-                <div className={`${styles.blogDisplayContentlefttextBox} ${styles.titi}`}>
-                    <span className={styles.blogDisplayContentlefttext1}>Centre Of Art</span>
-                    <span className={styles.blogDisplayContentlefttext2}>The different faces of womanhood.</span>
-                    <span className={styles.blogDisplayContentlefttext3}>By Titilope </span>
-                    <span className={styles.blogDisplayContentlefttext4}> August 10, 2023</span>
+                <div className='bg-orange-900 p-1 text-dark'>
+                    <span className='font-semibold block'>Art & Music</span>
+                    <span className='font-bold block text-xl'>The 5th Dimension and Journey of Afrobeat.</span>
+                    <span className='italic font-semibold block'>By Stonebwoy </span>
+                    <span className='font-semibold block'> June 10, 2023</span>
+                </div>
+            </div>
+
+            <div className='blogDisplayContentleftBox w-full '>
+                <div className='blogDisplayContentleftImageBox h-64'>
+                    <img src='images/titi.jpeg' alt='Titilope' className='w-full h-full'/>
+                </div>
+                <div className='bg-green-400 p-1 text-white grid grid-cols-1 gap-2'>
+                    <span className='font-semibold block'>Centre Of Art</span>
+                    <span className='font-bold block text-xl'>The different faces of womanhood.</span>
+                    <span className='italic font-semibold block'>By Titilope </span>
+                    <span className='font-semibold block'> August 10, 2023</span>
                 </div>
             </div>
         </div>

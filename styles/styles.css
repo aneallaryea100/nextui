@@ -25,23 +25,23 @@ body {
   /* Desktop view */
   @media screen and (min-width: 1024px){
     .userContainer {
-      display: flex;
+      /* display: flex;
       justify-content: space-around;
       background-color: #483;
       height: 100vh;
       width: 100%;
-      overflow: hidden;
+      overflow: hidden; */
     }
     
   
     .redDiv {
-      display: block !important;
-      background-color: teal;
       background-image: url('/images/sweet_boy.JPG');
+      /* display: block !important;
+      background-color: teal;
       background-repeat: no-repeat;
       background-size: cover;
-      width: 33.33%;
-      position: relative;
+      width: 100%;
+      position: relative; */
     }
   
     .redDiv:hover {
@@ -49,51 +49,51 @@ body {
     }
   
     .blueDiv {
-      background-color: rgb(159, 53, 14);
       background-image: url('/images/no_smile.JPG');
+      /* background-color: rgb(159, 53, 14);
       background-repeat: no-repeat;
       background-size: cover;
       width: 33.33% !important;
-      position: relative;
+      position: relative; */
     }
   
     .greenDiv {
-      display: block !important;
-      background-color: rgb(45, 236, 11);
       background-image: url('/images/twin_sisters.JPG');
+      /* display: block !important;
+      background-color: rgb(45, 236, 11);
       background-repeat: no-repeat;
       background-size: cover;
       width: 33.33%;
-      position: relative;
+      position: relative; */
     }
   
   }
 
-  /* Mobile view */
+  /******* Mobile view *************/
   .userContainer {
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
     background-color: #483;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; */
   }
 
   .redDiv{
-    display: none;
+    background-image: url('/images/sweet_boy.JPG');
   }
 
   .blueDiv {
-    background-color: rgb(159, 53, 14);
     background-image: url('/images/no_smile.JPG');
+    /* background-color: rgb(159, 53, 14);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    position: relative;
+    position: relative; */
   }
 
   .greenDiv {
-    display: none;
+    /* display: none; */
   }
 
   .centerRedDiv {

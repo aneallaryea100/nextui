@@ -12,7 +12,11 @@ module.exports = {
     colors: {
       transparent: "transparent",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'editorialbackground': "url('/images/fo.jpg')",
+      }
+    },
   },
   plugins: [],
 }

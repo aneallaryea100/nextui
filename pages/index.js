@@ -29,7 +29,7 @@ function Home() {
       <Featured />
       <GalleryFeatured />
       <BlogDisplay />
-      <FollowArtist />
+      {/* <FollowArtist /> */}
     </div>
   )
 }
