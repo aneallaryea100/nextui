@@ -6,16 +6,16 @@ import ndebele from '../public/images/gramwood.jpg'
 
 function Featured() {
   return (
-    <div className='featuredContainer w-full container mt-5'>
-      <h1 className='featuredheadtitle font-semibold text-2xl text-dark'>Featured </h1>
+    <div className='featuredContainer max-w-[calc(100%-4rem)] mx-auto max-w-[7rem] mt-5'>
+      <h1 className='featuredheadtitle font-semibold text-2xl text-dark my-4'>Featured </h1>
 
-      <div className='artistContainer grid gap-1 grid-cols-2 lg:grid-cols-4'>
+      <div className='artistContainer grid gap-1 grid-cols-2 gap-y-3 lg:grid-cols-4'>
             <div className='artistContainerList w-full h-80 p-1'>
                 <div className='imageArtContainer w-full h-5/6'>
                     <Image src={Kalei} alt='thecollecters' className='imgart w-full h-full' />
                 </div>
-                <div className='itextFeatured font-semibold'><p>Featured Fair</p></div>
-                <div className='iheadFeatured'><span>Tatenda Eclipse, Zimbabwe.</span></div>
+                <div className='itextFeatured font-semibold text-gray-700'><p>Featured Fair</p></div>
+                <div className='iheadFeatured w-full font-semibold'><span>N. Tatenda, Zimbabwe.</span></div>
             </div>
 
             {/* second */}
@@ -24,8 +24,8 @@ function Featured() {
                 <div className='imageArtContainer w-full h-5/6'>
                     <Image src={Ghosts} alt='thecollecters' className='imgart w-full h-full' />
                 </div>
-                <div className='itextFeatured font-semibold'><p>Featured Fair</p></div>
-                <div className='iheadFeatured'><span>Afolabi-Isigba, Nigeria.</span></div>
+                <div className='itextFeatured font-semibold text-gray-700'><p>Featured Fair</p></div>
+                <div className='iheadFeatured w-full font-semibold'><span>Afolabi-Isigba, Nigeria.</span></div>
             </div>
 
             {/* third */}
@@ -34,8 +34,8 @@ function Featured() {
                 <div className='imageArtContainer w-full h-5/6'>
                     <Image src={Yahima} alt='thecollecters' className='imgart w-full h-full' />
                 </div>
-                <div className='itextFeatured font-semibold'><p>Featured Fair</p></div>
-                <div className='iheadFeatured'><span>Adjeley Anang, Ghana.</span></div>
+                <div className='itextFeatured font-semibold text-gray-700'><p>Featured Fair</p></div>
+                <div className='iheadFeatured w-full font-semibold'><span>Adjeley Anang, Ghana.</span></div>
             </div>
 
             {/* fourth */}
@@ -44,8 +44,8 @@ function Featured() {
                 <div className='imageArtContainer w-full h-5/6'>
                     <Image src={ndebele} alt='thecollecters' className='imgart w-full h-full' />
                 </div>
-                <div className='itextFeatured font-semibold'><p>Featured Fair</p></div>
-                <div className='iheadFeatured'><span>Bruise at Night, Kenya.</span></div>
+                <div className='itextFeatured font-semibold text-gray-700'><p>Featured Fair</p></div>
+                <div className='iheadFeatured w-full font-semibold'><span>Bruise at Night, Kenya.</span></div>
             </div>
             
             

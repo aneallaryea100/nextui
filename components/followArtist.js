@@ -16,8 +16,8 @@ function FollowArtist() {
     
   return (
     <div className="max-w-[calc(100%-4rem)] mx-auto max-w-[7rem] overscroll-x-none mt-5">
-      <h2 className="font-bold text-2xl">Trending Artist on Tribals</h2>
-        <div className='carouselz2Container w-full grid grid-flow-col auto-cols-[55%] gap-3 overflow-x-auto overscroll-x-contain snap-x snap-mandatory snap-start scroll-px-2 scroll-smooth py-12 relative md:auto-cols-[33%] lg:auto-cols-[19%]'>
+      <h2 className="font-bold text-2xl -mb-5">Trending Artist on Tribals</h2>
+        <div className='carouselz2Container w-full grid grid-flow-col auto-cols-[55%] gap-3 overflow-x-auto overscroll-x-contain snap-x snap-mandatory snap-start scroll-px-2 scroll-smooth py-20 relative md:auto-cols-[33%] lg:auto-cols-[19%]'>
             
             {cardArtist.map((card, index) => (
 
