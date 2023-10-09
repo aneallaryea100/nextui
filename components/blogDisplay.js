@@ -3,8 +3,8 @@ import styles from '@styles/blogDisplay.module.css'
 
 function BlogDisplay() {
   return (
-    <div className='container mt-5 p-2'>
-      <h2 className='font-semibold text-2xl text-dark my-1'>Tribals Editorial</h2>
+    <div className='max-w-[calc(100%-4rem)] mx-auto max-w-[7rem] mt-5 py-8'>
+      <h2 className='font-semibold text-2xl text-dark my-5'>Tribals Editorial</h2>
       <div className='blogDisplayContentContainer grid grid-cols-1 w-full gap-x-1 gap-y-4 md:grid-cols-2 md:gap-y-0' >
         <div className='blogDisplayContentrigthEdit w-full h-96 md:h-screen'>
             <div className="blogDisplayContentImagery w-full h-3/4 bg-black bg-[url('/images/fo.jpg')] bg-no-repeat bg-cover bg-center">
@@ -21,7 +21,7 @@ function BlogDisplay() {
         <div className='blogDisplayContentleftEdit w-full grid grid-cols-1 grid-rows-1 gap-y-2 gap-x-2 md:grid-cols-2'>
             <div className='blogDisplayContentleftBox w-full '>
                 <div className='blogDisplayContentleftImageBox h-64'>
-                    <img src='images/asake.webp' alt='asake work of art' className='w-full h-full'/>
+                    <img src='images/asake.webp' alt='Asake - Work of art' className='w-full h-full'/>
                 </div>
                 <div className='bg-orange-500 p-1 text-dark grid grid-cols-1 gap-0'>
                     <span className='font-semibold block'>Art & Music</span>
@@ -64,6 +64,30 @@ function BlogDisplay() {
                     <span className='font-bold block text-xl'>The different faces of womanhood.</span>
                     <span className='italic font-semibold block'>By Titilope </span>
                     <span className='font-semibold block'> August 10, 2023</span>
+                </div>
+            </div>
+
+            <div className='blogDisplayContentleftBox w-full '>
+                <div className='blogDisplayContentleftImageBox h-64'>
+                    <img src='images/asake.webp' alt='asake work of art' className='w-full h-full'/>
+                </div>
+                <div className='bg-orange-500 p-1 text-dark grid grid-cols-1 gap-0'>
+                    <span className='font-semibold block'>Art & Music</span>
+                    <span className='font-bold block text-xl'>Inside the art and spirituality of Music</span>
+                    <span className='italic font-semibold block'>By Asake </span>
+                    <span className='font-semibold block'> July 8, 2023</span>
+                </div>
+            </div>
+
+            <div className='blogDisplayContentleftBox w-full '>
+                <div className='blogDisplayContentleftImageBox h-64'>
+                    <img src='images/asake.webp' alt='asake work of art' className='w-full h-full'/>
+                </div>
+                <div className='bg-orange-500 p-1 text-dark grid grid-cols-1 gap-0'>
+                    <span className='font-semibold block'>Art & Music</span>
+                    <span className='font-bold block text-xl'>Inside the art and spirituality of Music</span>
+                    <span className='italic font-semibold block'>By Asake </span>
+                    <span className='font-semibold block'> July 8, 2023</span>
                 </div>
             </div>
         </div>

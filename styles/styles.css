@@ -14,70 +14,14 @@ a {
 }
 
 body {
-    /* font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-      'Arial', sans-serif; */
       font-family: 'Poppins', sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       padding-top: 1rem;
-  }
-
-  /* Desktop view */
-  @media screen and (min-width: 1024px){
-    .userContainer {
-      /* display: flex;
-      justify-content: space-around;
-      background-color: #483;
-      height: 100vh;
-      width: 100%;
-      overflow: hidden; */
-    }
-    
-  
-    .redDiv {
-      background-image: url('/images/sweet_boy.JPG');
-      /* display: block !important;
-      background-color: teal;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      position: relative; */
-    }
-  
-    .redDiv:hover {
-      background-color: teal;
-    }
-  
-    .blueDiv {
-      background-image: url('/images/no_smile.JPG');
-      /* background-color: rgb(159, 53, 14);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 33.33% !important;
-      position: relative; */
-    }
-  
-    .greenDiv {
-      background-image: url('/images/twin_sisters.JPG');
-      /* display: block !important;
-      background-color: rgb(45, 236, 11);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 33.33%;
-      position: relative; */
-    }
-  
+      overscroll-behavior-x: none;
   }
 
   /******* Mobile view *************/
-  .userContainer {
-    /* display: flex;
-    justify-content: space-around;
-    background-color: #483;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden; */
-  }
 
   .redDiv{
     background-image: url('/images/sweet_boy.JPG');
@@ -85,16 +29,12 @@ body {
 
   .blueDiv {
     background-image: url('/images/no_smile.JPG');
-    /* background-color: rgb(159, 53, 14);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    position: relative; */
   }
 
   .greenDiv {
-    /* display: none; */
+    background-image: url('/images/twin_sisters.JPG');
   }
+
 
   .centerRedDiv {
     background-color: rgb(215, 11, 205);
@@ -140,6 +80,25 @@ body {
     font-family: 'Bodoni Moda', serif;
     border-radius: 0.5rem;
   }
+
+  .carouselz2Container::-webkit-scrollbar {
+    height: 1vh;
+  }
+
+  .carouselz2Container::-webkit-scrollbar-track {
+    background-color: rgb(248, 245, 245);
+    border-radius: 2rem;
+}
+
+.carouselz2Container::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: rgb(25, 23, 21);
+    width: 3px;
+}
+
+.carouselz2Container::-webkit-scrollbar-thumb:hover {
+    background-color: #161616;
+}
 
   @media screen and (min-width: 1024px){
     body {

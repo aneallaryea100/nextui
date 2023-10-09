@@ -13,8 +13,8 @@ function FeaturedProducts() {
   }
   
       return (
-        <div className={styles.darkbackground}>
-          <h1 className={styles.headGalText}>Gallery</h1>
+        <div className='bg-white container mt-5'>
+          <h1 className='font-bold text-dark text-2xl'>Gallery</h1>
         <ScrollingCarousel show={3.5} slide={3} swiping={true}>
 
         <div className={styles.itemBox}>

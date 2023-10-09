@@ -62,6 +62,8 @@
     height: 20rem;
     margin: 0rem 2rem;
     /* scroll-snap-align: start; */
+    flex: 0 0 100%;
+    min-width: 0;
 }
 
 .artistImageBoxContainer {
