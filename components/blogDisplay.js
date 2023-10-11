@@ -1,14 +1,13 @@
-import styles from '@styles/blogDisplay.module.css'
-
-
 function BlogDisplay() {
   return (
     <div className='max-w-[calc(100%-4rem)] mx-auto max-w-[7rem] mt-5 py-8'>
       <h2 className='font-semibold text-2xl text-dark my-5'>Tribals Editorial</h2>
       <div className='blogDisplayContentContainer grid grid-cols-1 w-full gap-x-1 gap-y-4 md:grid-cols-2 md:gap-y-0' >
         <div className='blogDisplayContentrigthEdit w-full h-96 md:h-screen'>
-            <div className="blogDisplayContentImagery w-full h-3/4 bg-black bg-[url('/images/fo.jpg')] bg-no-repeat bg-cover bg-center">
-                {/* <img src='images/fo.jpg' alt='editorial' className=''/> */}
+            <div className="blogDisplayContentImagery w-full h-3/4 bg-black bg-no-repeat bg-cover bg-center" >
+                <img src='https://images.unsplash.com/photo-1501975558162-0be7b8ca95ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxhcnQlMjB0aGVtZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60' 
+                alt='editorial' 
+                className='w-full h-full object-cover'/>
             </div>
             <div className='blogDisplayContenttext'>
                 <span className='font-semibold block'>Center of Arts</span>

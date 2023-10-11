@@ -81,6 +81,10 @@ body {
     border-radius: 0.5rem;
   }
 
+  .blogDisplayContentImagery {
+    /* background-image: url(''); */
+  }
+
   .carouselz2Container::-webkit-scrollbar {
     height: 1vh;
   }
