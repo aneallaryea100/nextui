@@ -52,10 +52,14 @@ export default NextAuth({
     ],
     callbacks: {
         async jwt({ token, user }) {
-            return { ...token, ...user }
+            // return { ...token, ...user }
+            if(user){
+              token.id = user.id
+            }
+            return token;
         },
         async session({ session, token, user }) {
-          session.user = token;
+          session.user.id = token.id;
           return session;
         }
     }

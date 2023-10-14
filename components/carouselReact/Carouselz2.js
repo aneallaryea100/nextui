@@ -81,7 +81,7 @@ function Carouselz2() {
     }
 
     return (
-        <div className='max-w-[calc(100%-4rem)] mx-auto max-w-[7rem]'>
+        <div className='max-w-[calc(100%-4rem)] mx-auto'>
             <div className='carouselz2Container w-full grid grid-flow-col auto-cols-[55%] gap-3 overflow-x-auto overscroll-x-contain snap-x snap-mandatory snap-start scroll-px-2 scroll-smooth py-8 relative md:auto-cols-[33%] lg:auto-cols-[19%]'>
                 {
                     randomData.map((data, dataIndex) => (

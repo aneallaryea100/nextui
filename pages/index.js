@@ -53,8 +53,9 @@ function User ({ session, handleSignOut }) {
   )
 }
 
-export async function getServerSideProps({ req }){
-  const session = await getSession({ req })
+export async function getServerSideProps(context){
+  const session = await getSession(context)
+  console.log('session', session)
 
   if(!session){
     return {

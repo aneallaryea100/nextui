@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from '@styles/miniNav.module.css'
 import { signIn, signOut, useSession } from "next-auth/react";
 import { AiOutlineSearch, AiOutlineUser, AiFillMail } from "react-icons/ai";
+import { data } from 'jquery';
 
 function MiniNavbar() {
   const {data: session} = useSession();
@@ -9,6 +10,7 @@ function MiniNavbar() {
 
   const toggleUserProfile = () => {
     setIsUserProfileOpen(!isUserProfileOpen);
+    console.log(session)
   }
 
   return (

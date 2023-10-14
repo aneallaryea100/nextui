@@ -58,7 +58,7 @@
     },
     {
         "id": 3,
-        "name": "Black Sherif - The Journey of KK",
+        "name": "Stonebwoy - The Journey of KK",
         "category": "Music",
         "title": "The 5th Dimension and Journey of Afrobeat.",
         "author": "Stonebwoy",

@@ -47,6 +47,7 @@
 
 // export default ArtistData;
 /******************************************************************************************************************************/
+
 // Generate random name
 const names = [
     { firstName: 'Titi', lastName: 'Tatenda' },
@@ -115,13 +116,30 @@ function generateRandomPhoneNumber() {
   return `+86-${randomNumber}`;
 }
 
+//Generate random countries
 const countries = [
-    { name: 'Italy', demonym: 'Italian' },
-    { name: 'France', demonym: 'French' },
-    { name: 'Spain', demonym: 'Spanish' },
-    { name: 'Germany', demonym: 'German' },
-    // Add more countries as needed
+  { name: 'Italy', demonym: 'Italian' },
+  { name: 'France', demonym: 'French' },
+  { name: 'Spain', demonym: 'Spanish' },
+  { name: 'Germany', demonym: 'German' },
+  { name: 'Ghana', demonym: 'Ghanaian' },
+  { name: 'Nigeria', demonym: 'Nigerian'},
+  { name: 'United States', demonym: 'American'},
+  { name: 'Japan', demonym: 'Japanese' },
+  { name: 'Brazil', demonym: 'Brazilian' },
+  { name: 'Australia', demonym: 'Australian' },
+  { name: 'India', demonym: 'Indian' },
+  { name: 'Canada', demonym: 'Canadian' },
+  { name: 'Russia', demonym: 'Russian' },
+  { name: 'South Africa', demonym: 'South African' },
+  { name: 'Mexico', demonym: 'Mexican' },
+  { name: 'Argentina', demonym: 'Argentinian' },
+  { name: 'Egypt', demonym: 'Egyptian' },
+  { name: 'Turkey', demonym: 'Turkish' },
+  { name: 'Greece', demonym: 'Greek' },
+  { name: 'South Korea', demonym: 'South Korean' }
 ];
+
 
 function getRandomCountry() {
     const randomIndex = Math.floor(Math.random() * countries.length);
@@ -150,14 +168,114 @@ function generateRandomAddress() {
   };
 }
 
+// generate random gallery names
+
+const galleryNames = [
+  "Artistic Nexus",
+  "Creative Horizon",
+  "Vivid Visions Gallery",
+  "Harmony Haven",
+  "Serenity Studios",
+  "Modern Muse Gallery",
+  "Eloquent Expressions",
+  "Radiant Realms Art Gallery",
+  "Timeless Treasures Gallery",
+  "Elemental Art Space",
+  "Ethereal Exhibition",
+  "Renaissance Revival",
+  "Urban Oasis Gallery",
+  "Infinite Impressions",
+  "Enchanted Canvas",
+  "Tranquil Tides Gallery",
+  "Whimsical Wonders",
+  "The Gallery of Dreams",
+  "Luminous Legacy Gallery",
+  "Echoes of Elegance",
+  "Celestial Showcase",
+  "Majestic Marvels Gallery",
+  "Golden Gazebo Gallery",
+  "Galactic Gallery",
+  "Inner Light Art Space",
+  "Opulent Oceans Gallery",
+  "Quantum Quarters",
+  "Opal Orchid Gallery",
+  "Stellar Symphony",
+  "Noble Nook Gallery",
+  "Chromatic Canvas",
+  "Hidden Harmony Gallery",
+  "Blissful Brushstrokes",
+  "Prism Pinnacle",
+  "Enigma Emporium",
+  "Kaleidoscope Korners",
+  "Radiant Roots Gallery",
+  "Whispers of Wonder",
+  "Elemental Elegance Gallery",
+  "Enchanted Echoes",
+  "Ethereal Edge Gallery",
+  "Tranquil Territory",
+  "Lustrous Legacy Gallery",
+  "The Canvas Cove",
+  "Celestial Sanctuary",
+  "Envisioned Exhibits",
+  "Galaxy Gateway Gallery",
+  "Harmony Haven",
+  "Vivid Visions Gallery",
+  "Urban Oasis Gallery"
+];
+
+function getRandomGalleryNames() {
+  const randomIndex = Math.floor(Math.random() * galleryNames.length);
+  return galleryNames[randomIndex];
+}
+
+//random art organisations
+const artOrganizationNames = [
+  "Creative Art Collective",
+  "Innovative Art Alliance",
+  "Visionary Art Society",
+  "Artistic Fusion Foundation",
+  "Contemporary Creators Guild",
+  "Expressive Arts Network",
+  "Imagination Institute",
+  "Artistic Endeavors Association",
+  "Modern Masters Guild",
+  "Cultural Artisans Collective"
+];
+
+function randomArtOrganizationNames() {
+	const randomIndex = Math.floor(Math.random() * artOrganizationNames.length);
+  return artOrganizationNames[randomIndex];
+}
+
+//generate random art Categories
+const artCategories = [
+  "Abstract",
+  "Landscape",
+  "Portrait",
+  "Still Life",
+  "Surreal",
+  "Impressionist",
+  "Realistic",
+  "Minimalist",
+  "Pop Art",
+  "Urban Art",
+  "Contemporary",
+  "Expressionist",
+  "Conceptual"
+];
+
+function randomArtCategories() {
+	const randomIndex = Math.floor(Math.random() * artCategories.length);
+  return artCategories[randomIndex];
+}
+
 // Function to generate a random artwork
 function generateRandomArtwork() {
   return {
-    image: `https://source.unsplash.com/random`,
+    image: `https://source.unsplash.com/random/universe`,
     subtitle: `Subtitle ${Math.floor(Math.random() * 10)}`,
     year: `${Math.floor(Math.random() * 1000)}`,
     sold: false,
-    galleryName: `Gallery ${Math.floor(Math.random() * 5)}`,
     price: Math.floor(Math.random() * 1000),
     makeOffer: false,
     limitedOffer: false,
@@ -170,19 +288,31 @@ function generateRandomArtwork() {
   };
 }
 
+//generate random year
+function generateRandomYear() {
+    const minYear = 1990;
+    const maxYear = 2002;
+    return Math.floor(Math.random() * (maxYear - minYear + 1) + minYear);
+  }
+  
+  const randomYear = generateRandomYear();
+  console.log(randomYear);
+  
+
 const ArtistData = [];
 
 for (let i = 0; i < 50; i++) {
   ArtistData.push({
     name: generateRandomName(),
-    profileImage: `https://source.unsplash.com/random/profile`,
-    gallery: `Gallery ${i + 1}`,
+    profileImage: `https://source.unsplash.com/random//${generateRandomName().firstName}`,
+    gallery: getRandomGalleryNames(),
     organisation: {
-      name: `Organisation ${i + 1}`,
+      name: randomArtOrganizationNames(),
       follow: false,
     },
+    category: randomArtCategories(),
     birthPlace: getRandomCountry(),
-    typeOfArt: `TypeOfArt ${i + 1}`,
+    year: generateRandomYear(),
     phone_number: generateRandomPhoneNumber(),
     website: `https://website${i + 1}.com`,
     email: generateRandomEmail(),

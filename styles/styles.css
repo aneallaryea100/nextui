@@ -86,7 +86,7 @@ body {
   }
 
   .carouselz2Container::-webkit-scrollbar {
-    height: 1vh;
+    height: 0.2rem;
   }
 
   .carouselz2Container::-webkit-scrollbar-track {
