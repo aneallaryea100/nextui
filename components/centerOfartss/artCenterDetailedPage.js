@@ -75,7 +75,7 @@ function ArtCenterDetailedPage({ artDetails }) {
                     <span className='font-bold'>Hashimoto Contemporary</span>
                     <span className='font-thin text-xs'>New York, Los Angeles, +1 more</span>
                 </div>
-                <span className='px-4 py-1 rounded-full border-1 border-black'>Contact Gallery</span>
+                <span className='px-4 py-1 rounded-full border-1 whitespace-nowrap border-black'>Contact Gallery</span>
             </div>
         </div>
 
@@ -84,7 +84,7 @@ function ArtCenterDetailedPage({ artDetails }) {
                 <div className='flex flex-col'>
                     <span>Get notifications for similar works</span>
                 </div>
-                <span className='flex justify-between items-center gap-2 px-4 py-1 rounded-full border-1 border-black'><AiOutlineBell /> Create Alert</span>
+                <span className='flex justify-between items-center gap-2 px-4 py-1 rounded-full border-1 whitespace-nowrap border-black'><AiOutlineBell /> Create Alert</span>
             </div>
         </div>
 

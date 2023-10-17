@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import styles from '@styles/miniNav.module.css'
 import { signIn, signOut, useSession } from "next-auth/react";
 import { AiOutlineSearch, AiOutlineUser, AiFillMail } from "react-icons/ai";
@@ -10,7 +11,7 @@ function MiniNavbar() {
 
   const toggleUserProfile = () => {
     setIsUserProfileOpen(!isUserProfileOpen);
-    console.log(session)
+    console.log('session user', session.user)
   }
 
   return (
@@ -22,7 +23,7 @@ function MiniNavbar() {
       <div className={styles.acountSearchProfile}>
         <span>Buy</span>
         <span>Sell</span>
-          <span>Editorial</span>
+          <span><Link href={'/articles'}>Editorial</Link></span>
           <AiFillMail />
           <span onClick={toggleUserProfile}><AiOutlineUser /></span>
           {

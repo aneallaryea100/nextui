@@ -1,9 +1,12 @@
+import Image from "next/image"
+import BlogData from "@localDatabase/Data/editorialBlog"
+
 function BlogDisplay() {
   return (
-    <div className='max-w-[calc(100%-4rem)] mx-auto max-w-[7rem] mt-5 py-8'>
+    <div className='max-w-[calc(100%-4rem)] mx-auto mt-5 py-8'>
       <h2 className='font-semibold text-2xl text-dark my-5'>Tribals Editorial</h2>
       <div className='blogDisplayContentContainer grid grid-cols-1 w-full gap-x-1 gap-y-4 md:grid-cols-2 md:gap-y-0' >
-        <div className='blogDisplayContentrigthEdit w-full h-96 md:h-screen'>
+        <div className='blogDisplayContentrigthEdit mb-5 w-full h-96 md:h-screen md:mb-0'>
             <div className="blogDisplayContentImagery w-full h-3/4 bg-black bg-no-repeat bg-cover bg-center" >
                 <img src='https://images.unsplash.com/photo-1501975558162-0be7b8ca95ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxhcnQlMjB0aGVtZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60' 
                 alt='editorial' 
@@ -17,78 +20,29 @@ function BlogDisplay() {
             </div>
         </div>
         
-        <div className='blogDisplayContentleftEdit w-full grid grid-cols-1 grid-rows-1 gap-y-2 gap-x-2 md:grid-cols-2'>
-            <div className='blogDisplayContentleftBox w-full '>
-                <div className='blogDisplayContentleftImageBox h-64'>
-                    <img src='images/asake.webp' alt='Asake - Work of art' className='w-full h-full'/>
-                </div>
-                <div className='bg-orange-500 p-1 text-dark grid grid-cols-1 gap-0'>
-                    <span className='font-semibold block'>Art & Music</span>
-                    <span className='font-bold block text-xl'>Inside the art and spirituality of Music</span>
-                    <span className='italic font-semibold block'>By Asake </span>
-                    <span className='font-semibold block'> July 8, 2023</span>
-                </div>
-            </div>
+        <div className='blogDisplayContentleftEdit w-full grid grid-cols-1 grid-rows-1 gap-y-5 gap-x-3 md:grid-cols-2'>
+            {
+                BlogData.map((data) => (
+                    <div className='blogDisplayContentleftBox w-full ' key={data.id}>
+                        <div className='blogDisplayContentleftImageBox h-64'>
+                            <img
+                             src={data.imageSrc}
+                             alt={data.name}
+                            className='w-full h-full'
+                            />
+                        </div>
+                        <div className='p-1 text-dark grid grid-cols-1 gap-0'>
+                            <span className='font-semibold block'>{data.category}</span>
+                            <span className='font-bold block text-xl'>{data.title}</span>
+                            <span className='italic font-semibold block'>{`By ${data.author}` }</span>
+                            <span className='font-semibold block text-gray-500'>{data.date}</span>
+                        </div>
+                    </div>
+                ))
+            }
+           
 
-            <div className='blogDisplayContentleftBox w-full'>
-                <div className='blogDisplayContentleftImageBox h-64'>
-                    <img src='images/blacko.jpg' alt='The villian I never was-blacksherif' className='w-full h-full'/>
-                </div>
-                <div className='bg-black text-white p-1 grid grid-cols-1 gap-0'>
-                    <span className='font-semibold block'>Art & Music</span>
-                    <span className='font-bold block text-xl'>The Inspiration behind the Villian I never was.</span>
-                    <span className='italic font-semibold block'>By Black Sherif </span>
-                    <span className='font-semibold block'> August 18, 2023</span>
-                </div>
-            </div>
-
-            <div className='blogDisplayContentleftBox w-full'>
-                <div className='blogDisplayContentleftImageBox h-64'>
-                    <img src='images/stonebwoy.jpg' alt='stonebwoy- 5th dimension' className='w-full h-full'/>
-                </div>
-                <div className='bg-orange-900 p-1 text-dark'>
-                    <span className='font-semibold block'>Art & Music</span>
-                    <span className='font-bold block text-xl'>The 5th Dimension and Journey of Afrobeat.</span>
-                    <span className='italic font-semibold block'>By Stonebwoy </span>
-                    <span className='font-semibold block'> June 10, 2023</span>
-                </div>
-            </div>
-
-            <div className='blogDisplayContentleftBox w-full '>
-                <div className='blogDisplayContentleftImageBox h-64'>
-                    <img src='images/titi.jpeg' alt='Titilope' className='w-full h-full'/>
-                </div>
-                <div className='bg-green-400 p-1 text-white grid grid-cols-1 gap-2'>
-                    <span className='font-semibold block'>Centre Of Art</span>
-                    <span className='font-bold block text-xl'>The different faces of womanhood.</span>
-                    <span className='italic font-semibold block'>By Titilope </span>
-                    <span className='font-semibold block'> August 10, 2023</span>
-                </div>
-            </div>
-
-            <div className='blogDisplayContentleftBox w-full '>
-                <div className='blogDisplayContentleftImageBox h-64'>
-                    <img src='images/asake.webp' alt='asake work of art' className='w-full h-full'/>
-                </div>
-                <div className='bg-orange-500 p-1 text-dark grid grid-cols-1 gap-0'>
-                    <span className='font-semibold block'>Art & Music</span>
-                    <span className='font-bold block text-xl'>Inside the art and spirituality of Music</span>
-                    <span className='italic font-semibold block'>By Asake </span>
-                    <span className='font-semibold block'> July 8, 2023</span>
-                </div>
-            </div>
-
-            <div className='blogDisplayContentleftBox w-full '>
-                <div className='blogDisplayContentleftImageBox h-64'>
-                    <img src='images/asake.webp' alt='asake work of art' className='w-full h-full'/>
-                </div>
-                <div className='bg-orange-500 p-1 text-dark grid grid-cols-1 gap-0'>
-                    <span className='font-semibold block'>Art & Music</span>
-                    <span className='font-bold block text-xl'>Inside the art and spirituality of Music</span>
-                    <span className='italic font-semibold block'>By Asake </span>
-                    <span className='font-semibold block'> July 8, 2023</span>
-                </div>
-            </div>
+           
         </div>
       </div>
     </div>
@@ -96,3 +50,7 @@ function BlogDisplay() {
 }
 
 export default BlogDisplay
+
+// export asycn function getServerSideProps() {
+
+// }

@@ -13,7 +13,7 @@ function FeaturedProducts() {
   }
   
       return (
-        <div className='bg-white container mt-5 max-w-[calc(100%-4rem)] mx-auto max-w-[7rem]'>
+        <div className='bg-white container mt-5 max-w-[calc(100%-4rem)] mx-auto'>
           <h1 className='font-bold text-dark text-2xl my-4'>Gallery</h1>
         <ScrollingCarousel show={3.5} slide={3} swiping={true}>
 

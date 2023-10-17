@@ -6,10 +6,10 @@ import ndebele from '../public/images/gramwood.jpg'
 
 function Featured() {
   return (
-    <div className='featuredContainer max-w-[calc(100%-4rem)] mx-auto max-w-[7rem] mt-5'>
+    <div className='featuredContainer max-w-[calc(100%-4rem)] mx-auto mt-5'>
       <h1 className='featuredheadtitle font-semibold text-2xl text-dark my-4'>Featured </h1>
 
-      <div className='artistContainer grid gap-1 grid-cols-2 gap-y-3 lg:grid-cols-4'>
+      <div className='artistContainer grid grid-cols-2 gap-y-3 gap-x-3 lg:grid-cols-4'>
             <div className='artistContainerList w-full h-80 p-1'>
                 <div className='imageArtContainer w-full h-5/6'>
                     <Image src={Kalei} alt='thecollecters' className='imgart w-full h-full' />

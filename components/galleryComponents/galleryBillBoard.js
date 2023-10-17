@@ -2,9 +2,6 @@ import React, { useState } from 'react'
 import styles from '@styles/galleryBillboard.module.css'
 import {AiFillCaretLeft, AiFillCaretRight, AiOutlineMinus} from "react-icons/ai";
 
-
-
-
 function GalleryBillBoard({ galleryboard }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -27,8 +24,8 @@ function GalleryBillBoard({ galleryboard }) {
       return (
     <div className='container mt-5'>
         <div className='GalleryBillBoardcontainer max-w-[1400px] max-h-[700px] w-full mt-5 mx-auto rounded-2xl bg-gray-200'>
-                     <div key={galleryboard[currentIndex].id} className='GalleryBillBoardBox grid grid-cols-1 md:grid-cols-2 w-full h-full'>
-                        <div className='GalleryBillBoardImageBox w-full h-86 rounded-2xl md:h-96'>
+                     <div key={galleryboard[currentIndex].id} className='GalleryBillBoardBox grid grid-cols-1 md:grid-cols-2 w-full h-[35rem]'>
+                        <div className='GalleryBillBoardImageBox w-full h-86 rounded-2xl md:h-[35rem]'>
                             <img src={galleryboard[currentIndex].image} alt={galleryboard[currentIndex].title} className='GalleryBillBoardImage object-cover w-full h-full rounded'/>
                         </div>
                         <div className='GalleryBillBoardTextBox w-full h-64 flex flex-col justify-center items-center gap-2 md:h-full'>
@@ -58,8 +55,8 @@ function GalleryBillBoard({ galleryboard }) {
 
         <div className='flex justify-center items-center gap-2 w-1/5'>
           {/* arrow buttons */}
-          <div className={`text-2xl w-8 h-8 rounded-full p-2 bg-gray-100 text-white cursor-pointer relative ${currentIndex === 0 ? 'invisible' : 'visible'}`}><AiFillCaretLeft  onClick={prevSlide} className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-1.5 text-black'/></div>
-          <div className={`text-2xl w-8 h-8 rounded-full p-2 bg-gray-100 text-gray cursor-pointer relative  ${currentIndex === galleryboard.length - 1 ? 'invisible' : 'visible'}`}><AiFillCaretRight   onClick={nextSlide} className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-1.5 text-black"/></div>
+          <div className='text-2xl w-8 h-8 rounded-full p-2 bg-gray-100 text-white cursor-pointer relative'><AiFillCaretLeft  onClick={prevSlide} className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-1.5 text-black'/></div>
+          <div className='text-2xl w-8 h-8 rounded-full p-2 bg-gray-100 text-gray cursor-pointer relative'><AiFillCaretRight   onClick={nextSlide} className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-1.5 text-black"/></div>
         </div>
       </div>
        

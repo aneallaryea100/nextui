@@ -1,4 +1,4 @@
- const Blog = [
+ const BlogData = [
     {
         "id": 1,
         "name": "Asake - Work of art",
@@ -6,7 +6,7 @@
         "title": "Inside the art and spirituality of Music",
         "author": "Asake",
         "date": "July 8, 2023",
-        "imageSrc": "images/asake.webp",
+        "imageSrc": "/images/asake.webp",
         "blogContent": `Music has always been a powerful force in the world, transcending boundaries and speaking to the depths of the human soul. For the artist known as Asake, music is more than just a form of entertainment; it is a spiritual journey that connects him to something greater than himself.
 
         Asake, born and raised in the vibrant city of Lagos, Nigeria, has always been surrounded by a rich tapestry of musical traditions. From the rhythmic beats of traditional drums to the soul-stirring melodies of local choirs, music permeates every aspect of life in Lagos. It is this immersive musical environment that first ignited Asake's passion for the art form.
@@ -33,7 +33,7 @@
         "title": "The Inspiration behind the Villian I never was.",
         "author": "Black Sherif",
         "date": "August 18, 2023",
-        "imageSrc": "images/blacko.jpg",
+        "imageSrc": "/images/blacko.jpg",
         "blogContent": `In the heart of Konongo, a small town nestled in the verdant embrace of Ghana, a musical phenomenon was born. He emerged not as a knight in shining armor, nor a prince of melodies, but as an artist cloaked in the enigma of his own narrative. This is the tale of Black Sherif, the musician who defied conventions and, in doing so, became a legend.
 
         In the dusty streets of Konongo, where dreams flickered like distant stars, young Sherif harbored a secret. While others played with toys, his fingers danced upon the strings of an old guitar, painting symphonies of dreams and sorrows. He was not content with the mundane, for his soul yearned for heights yet unknown.
@@ -63,7 +63,36 @@
         "title": "The 5th Dimension and Journey of Afrobeat.",
         "author": "Stonebwoy",
         "date": "June 10, 2023",
-        "imageSrc": "images/stonebwoy.jpg",
+        "imageSrc": "/images/stonebwoy.jpg",
+        "blogContent": `In the vibrant heart of Ghana, where rhythms echo through the streets and the air is infused with a palpable energy, a musical titan emerged, reshaping the very fabric of Afrobeat. This is the saga of StoneBwoy, the maestro who transcended earthly boundaries and led us into the ethereal realm of the 5th dimension.
+
+        StoneBwoy's tale begins in the ancient city of Ashaiman, where the beats of drums and the pulse of life are one. Born into this crucible of sound, young Stone, as he was known then, felt the music in his bones. It wasn't a mere passion; it was a calling, an ancestral whisper urging him to become the vessel for a new wave of Afrobeat.
+        
+        The journey was not without its trials. StoneBwoy's quest to unlock the 5th dimension of Afrobeat was met with skepticism. Many questioned the audacity of his vision, for they could not see what he saw—the uncharted territory beyond the borders of tradition, where Afrobeat was not just a genre, but a cosmic force.
+        
+        StoneBwoy's artistry was a fusion of worlds. He drew from the ancient rhythms of his homeland, interweaving them with modern beats and global influences. His music was a bridge connecting generations, a testament to the enduring power of Afrobeat to evolve and adapt.
+        
+        But it was not just the music that set StoneBwoy apart; it was his message. His lyrics were a tapestry of wisdom, woven from the threads of his experiences. He spoke of unity, of resilience, of the boundless potential that lay within each of us. In his words, listeners found solace, inspiration, and a call to action.
+        
+        As StoneBwoy's star ascended, he remained firmly rooted in his origins. He recognized that the 5th dimension was not a distant realm, but a state of consciousness that could be accessed by all. Through his music, he invited listeners to embark on their own journeys, to transcend limitations, and to tap into the infinite wellspring of creativity that resides within.
+        
+        The world watched in awe as StoneBwoy's music spread like wildfire, igniting souls from Accra to Amsterdam, from Lagos to London. His concerts were not mere performances; they were gatherings of kindred spirits, united by the pulsating heartbeat of Afrobeat. In those moments, the 5th dimension was not a distant dream, but a tangible reality.
+        
+        StoneBwoy's journey was not without its battles, both personal and professional. Yet, like a phoenix rising from the ashes, he emerged stronger, more resolute in his mission to elevate Afrobeat to new heights. He understood that true mastery of the 5th dimension required not only talent, but tenacity, not only vision, but a willingness to confront the shadows.
+        
+        And so, the legacy of StoneBwoy endures—a testament to the power of music to transcend borders and barriers, to elevate the human spirit, and to unlock the limitless potential within us all. In his footsteps, a new generation of artists now tread, inspired by the maestro who dared to journey beyond convention.
+        
+        As the rhythms of Ashaiman continue to echo through the ages, StoneBwoy's music remains a beacon, guiding us towards the 5th dimension—a realm where Afrobeat is not just a genre, but a cosmic force, and where every soul is invited to dance to the rhythm of their own unique beat. `,
+        "wriitenBy": "By ChatGPT - The Virtual Scribe",
+    },
+    {
+        "id": 4,
+        "name": "Sir Idris- The future of Creative Art",
+        "category": "Culture",
+        "title": "The strength and beauty of Womanhood",
+        "author": "Sir Idris",
+        "date": "May 20, 2023",
+        "imageSrc": "https://i.pinimg.com/236x/b7/35/5e/b7355e07b5381e3f659507982cc2877e.jpg",
         "blogContent": `In the vibrant heart of Ghana, where rhythms echo through the streets and the air is infused with a palpable energy, a musical titan emerged, reshaping the very fabric of Afrobeat. This is the saga of StoneBwoy, the maestro who transcended earthly boundaries and led us into the ethereal realm of the 5th dimension.
 
         StoneBwoy's tale begins in the ancient city of Ashaiman, where the beats of drums and the pulse of life are one. Born into this crucible of sound, young Stone, as he was known then, felt the music in his bones. It wasn't a mere passion; it was a calling, an ancestral whisper urging him to become the vessel for a new wave of Afrobeat.
@@ -87,4 +116,4 @@
     }
 ]
 
-export default Blog
+export default BlogData
