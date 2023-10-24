@@ -11,7 +11,7 @@ function Abstract({artist}) {
            {artist.slice(10, 14).map((artdata, index) => (
             <div key={index} className='w-full h-[30rem]' >
               <div className='w-full h-[20rem]'>
-                <img src={artdata.profileImage} className='w-full h-full object-cover'/>
+                <img src={artdata.profileImage} className='w-full h-full object-cover bg-red-600'/>
               </div>
             <div className='bg-white w-full h-[5rem] flex items-center justify-between px-1 py-2 bg-red-300'>
               <div className='block w-full'>

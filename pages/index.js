@@ -9,6 +9,7 @@ import Featured from "@components/featuredArtist";
 import GalleryFeatured from "@components/galleryExhibit";
 import FollowArtist from "@components/followArtist";
 import BlogDisplay from "@components/blogDisplay";
+import Carouzels3 from "@components/carouselReact/Carouzels3";
 
 
 function Home() {
@@ -30,6 +31,7 @@ function Home() {
       <GalleryFeatured />
       <BlogDisplay />
       <FollowArtist />
+      <Carouzels3 />
     </div>
   )
 }

@@ -9,6 +9,12 @@ function index({galleryboard, galleryImage}) {
     <>
       <GalleryBillBoard galleryboard={galleryboard} />
       <GalleryImageDiv galleryImage={galleryImage}/>
+      <GalleryImageDiv galleryImage={galleryImage}/>
+      <GalleryImageDiv galleryImage={galleryImage}/>
+      <GalleryImageDiv galleryImage={galleryImage}/>
+      <GalleryImageDiv galleryImage={galleryImage}/>
+      <GalleryImageDiv galleryImage={galleryImage}/>
+      <GalleryImageDiv galleryImage={galleryImage}/>
     </>
   )
 }

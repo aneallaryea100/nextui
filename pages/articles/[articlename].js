@@ -22,7 +22,7 @@ function ArticleDetails({ articleName, index }) {
       <h1 className='font-bold text-2xl my-4'>{articleName.name}</h1>
       <div className=''>
         <img src={articleName.imageSrc} alt={articleName.author} className='float-left max-w-[320px] mx-2'/>
-        <p className=''>{articleName.blogContent}</p>
+        <div dangerouslySetInnerHTML={{ __html: articleName.blogContent }} />
       </div>
     </div>
   )
