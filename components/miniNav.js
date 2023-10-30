@@ -22,7 +22,7 @@ function MiniNavbar() {
       </div>
       <div className={styles.acountSearchProfile}>
         <span>Buy</span>
-        <span>Sell</span>
+        <span><Link href={'/sell'}>Sell</Link></span>
           <span><Link href={'/articles'}>Editorial</Link></span>
           <AiFillMail />
           <span onClick={toggleUserProfile}><AiOutlineUser /></span>

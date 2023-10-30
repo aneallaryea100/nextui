@@ -59,11 +59,11 @@ function Nav () {
                             <div><Link href={'/gallery'}>Gallery</Link></div>
                             <div><Link href={'/centerofart'}>Center of Art</Link></div>
                             <div><Link href={'/'}>Share Hugs</Link></div>
-                            <div><Link href={'/'}>Shop</Link></div>
+                            <div className='cursor-pointer'><Link href={'/'}>Shop</Link></div>
                             <div><Link href={'/'}>Tribals team</Link></div>
                             <hr />
                             <div><Link href={'/'}>Buy</Link></div>
-                            <div><Link href={'/'}>Sell</Link></div>
+                            <div><Link href={'/sell'}>Sell</Link></div>
                             <div><Link href={'/'}>Editorial</Link></div>
                             <hr />
                             <div><Link href={'/'}>Inbox</Link></div>
