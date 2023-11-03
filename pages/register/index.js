@@ -86,3 +86,10 @@ function Register() {
 }
 
 export default Register
+
+
+Register.getLayout = function PageLayout(page) {
+  return (
+    <>{page}</>
+  )
+}

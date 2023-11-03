@@ -2,14 +2,11 @@ import { useEffect } from 'react';
 import Link from 'next/link'
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { useSession } from 'next-auth/react';
-import Image from 'next/image';
 
-function Shipping({artworks}) {
-
-  const {data: session} = useSession();
+function Shipping({artworks, session}) {
 
   useEffect(() => {
-    console.log('session', session)
+    console.log('session in shipping', session)
     console.log('session name', session?.user?.name)
   });
   const price = parseFloat(artworks.price);

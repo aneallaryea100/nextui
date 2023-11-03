@@ -118,3 +118,9 @@ function Login() {
 }
 
 export default Login
+
+Login.getLayout = function PageLayout(page) {
+    return (
+        <>{page}</>
+    )
+}

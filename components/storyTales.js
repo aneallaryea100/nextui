@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 
-function UserPage({ session, handleSignOut }) {
+function StoryTales() {
   return (
     <main className="userContainer grid grid-cols-1 h-screen w-full overflow-hidden md:grid-cols-2 lg:grid-cols-3">
       <div className="redDiv hidden bg-yellow-700 bg-cover w-full relative md:block">
@@ -29,4 +29,4 @@ function UserPage({ session, handleSignOut }) {
   )
 }
 
-export default UserPage
+export default StoryTales

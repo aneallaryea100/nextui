@@ -1,17 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from '@styles/miniNav.module.css'
+import { useRouter } from 'next/router';
 import { signIn, signOut, useSession } from "next-auth/react";
 import { AiOutlineSearch, AiOutlineUser, AiFillMail } from "react-icons/ai";
-import { data } from 'jquery';
+import { redirect } from 'next/dist/server/api-utils';
+
 
 function MiniNavbar() {
   const {data: session} = useSession();
+  const router = useRouter();
   const[isUserProfileOpen, setIsUserProfileOpen] = useState(false);
 
   const toggleUserProfile = () => {
     setIsUserProfileOpen(!isUserProfileOpen);
-    console.log('session user', session.user)
+  }
+
+  async function logInUser () {
+    
+    router.replace('/login')
+    
+    console.log("user is logged in")
   }
 
   return (
@@ -29,14 +38,13 @@ function MiniNavbar() {
           {
             isUserProfileOpen && (
               <div className={styles.subProfileMenu}>
-                <btb>{session?<button onClick={() => signOut()} className={styles.loggbtn}>logout</button> : <button onClick={() => signIn()} className={styles.loggbtn}>login</button>}</btb>
               <span>settings</span>
               <span>Profile</span>
               </div>
               
             )
           }
-        
+         <btb>{session?<button onClick={() => signOut()} className={styles.loggbtn}>logout</button> : <><button onClick={logInUser} className={styles.loggbtn}>login</button> <button className={styles.loggbtn}>Signup</button></>}</btb>
       </div>
     </div>
   )

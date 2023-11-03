@@ -2,10 +2,13 @@ import React from 'react'
 import { AiOutlineDollar } from "react-icons/ai";
 import { GiAlliedStar } from "react-icons/gi";
 import { FaGlobeAfrica } from "react-icons/fa";
+import ScrollCarouselAneal from '@components/carouselReact/ScrollCarouselAneal';
+import Specialist from '@localDatabase/Data/specialist';
+import Expandable from '@components/expandable/expandable';
 
 
 
-function Index() {
+function Index({specialist}) {
   return (
     <div className='w-full grid grid-cols-1 gap-3'>
       {/* intro banner section */}
@@ -147,8 +150,29 @@ function Index() {
             <button className='btnbtn text-white rounded-full font-medium border border-black  bg-white hover:bg-blue-500 px-2.5'><span className='w-full text-black hover:underline hover:underline-offset-1'>Private Sales & Advisory</span></button>
           </div>
         </div>
-        {/* specialist images or div caraousel - no content yet */}
-        <div className='w-full h-2/3 bg-green-500 mt-5'></div>
+        {/* specialist images or div caraousel */}
+        <div className='w-full h-[80%] mt-5 flex no-wrap gap-2'>
+          {/* Sect 1 */}
+          <ScrollCarouselAneal>
+            {
+              specialist.map((data , dataindex) => (
+                 <div className='relative w-full h-[29rem] snap-start' key={dataindex}>
+                    <div className='w-full h-full bg-yellow-500'>
+                      <img src={data.img} alt={data.name} className='w-full h-full object-cover'/>
+                    </div>
+                    <div className='textsection absolute bottom-0 left-1 p-2 flex flex-col gap-2 text-white'>
+                      <span className='block font-semibold text-2xl'>{data.name}</span>
+                      <span className='block text-xs'>{data.role}</span>
+                       <Expandable>{data.about}</Expandable> 
+                      <button className='btnbtn w-[80%] rounded-full font-medium border bg-transparent hover:bg-blue-500 px-2.5 md:w-2/4'><span className='w-full text-white hover:underline hover:underline-offset-1 text-xs'>{`Contact ${data.name}`}</span></button>
+                    </div>
+                  </div>
+              ))
+            }
+           
+          </ScrollCarouselAneal>
+          
+        </div>
         <div className='w-full mt-3 md:px-4'>
           <span className='block text-sm font-semibold md:text-xl'>Not sure who’s the right fit for your collection? Get in touch and we’ll connect you.</span>
           <button className='btnbtn w-full bg-black text-white rounded-full font-medium border border-black hover:bg-blue-500 py-2 mt-3 md:w-1/3'><span className='w-full hover:underline hover:underline-offset-1'>Get in touch</span></button>
@@ -221,3 +245,11 @@ function Index() {
 }
 
 export default Index
+
+export async function getStaticProps() {
+  return {
+    props: {
+      specialist: Specialist,
+    },
+  }
+}

@@ -196,7 +196,7 @@ function Carouzels3() {
                     ))
                 }
             </div>
-        </div>
+    </div>
   )
 }
 
