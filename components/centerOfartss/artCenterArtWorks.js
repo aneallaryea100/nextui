@@ -21,7 +21,7 @@ function ArtCenterArtWorks({artcenterartworks}) {
   return (
     <>
     <ArtCenterFilter artcenterartworks={artcenterartworks}/>
-        <div className="p-3 grid grid-cols-2 gap-1 md:auto-cols-auto md:grid-cols-3 gap-2 lg:grid-cols-4 gap-3">
+        <div className="p-3 grid grid-cols-2 gap-1 md:auto-cols-auto md:grid-cols-3 md:gap-2 lg:grid-cols-4 lg:gap-3">
           {
             artWorkData.map((data) => (
               
