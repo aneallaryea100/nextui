@@ -6,6 +6,7 @@ import './globals.css'
 import { ReduxProvider } from '@redux/provider';
 
 
+
 function MyApp({Component, pageProps}){
 
     if(Component.getLayout) {
@@ -13,18 +14,17 @@ function MyApp({Component, pageProps}){
     }
     
     return (
-        
-          <ReduxProvider>
-            <SessionProvider session={pageProps.session}>
-            <Nav />
-              <Component {...pageProps} />
-            <Footer/>
-            </SessionProvider>
-          </ReduxProvider>
-        
-        
+  
+            <ReduxProvider>
+              <SessionProvider session={pageProps.session}>
+                <Nav />
+                  <Component {...pageProps} />
+                <Footer/>
+              </SessionProvider>
+            </ReduxProvider>
+            
     )
     
 }
 
-export default MyApp
+export default MyApp; 

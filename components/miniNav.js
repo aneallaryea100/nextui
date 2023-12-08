@@ -5,11 +5,14 @@ import { useRouter } from 'next/router';
 import { signIn, signOut, useSession } from "next-auth/react";
 import { AiOutlineSearch, AiOutlineUser, AiFillMail } from "react-icons/ai";
 import { redirect } from 'next/dist/server/api-utils';
+// import { useDispatch } from 'react-redux';
+// import { setPreviousPage } from '@redux/slices/previousPageSlice';
 
 
 function MiniNavbar() {
   const {data: session} = useSession();
   const router = useRouter();
+  //const dispatch = useDispatch();
   const[isUserProfileOpen, setIsUserProfileOpen] = useState(false);
 
   const toggleUserProfile = () => {
@@ -17,7 +20,7 @@ function MiniNavbar() {
   }
 
   async function logInUser () {
-    
+    //dispatch(setPreviousPage(router.asPath));
     router.replace('/login')
     
     console.log("user is logged in")

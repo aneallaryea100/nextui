@@ -11,10 +11,15 @@ import { useFormik } from 'formik';
 import { useRouter } from 'next/router';
 import { login_validate } from '../../lib/validate'
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+// import { useDispatch, useSelector } from 'react-redux';
+// import { selectPreviousPage } from '@redux/slices/previousPageSlice';
+// import { setPreviousPage } from '@redux/slices/previousPageSlice';
 
 function Login() {
     const [show, setShow] = useState(false)
     const router = useRouter();
+    //const dispatch = useDispatch();
+    //const previousPage = useSelector(selectPreviousPage);
     const formik = useFormik({
         initialValues: {
             userName:'',
@@ -35,17 +40,30 @@ function Login() {
         })
 
         if(status.ok) router.push(status.url)
-        console.log('status', status)
-    console.log(values);
+
+         //     if(status.ok) {
+    //         if (previousPage) {
+    //             router.push(previousPage);
+    //             dispatch(setPreviousPage(null)); // Reset previousPage after redirection
+    //         } else {
+    //             router.push(status.url);
+    //         }
+    //     }
+    //     console.log('status', status);
+    //     console.log(values);
+    //
     }
+ 
 
     //google handler function
     async function handleGoogleSignin(){
+        //dispatch(setPreviousPage(router.asPath));
         signIn('google', {callbackUrl: "http://localhost:3000"})
     }
 
     //github handler function
     async function handleGithubSignin(){
+        //dispatch(setPreviousPage(router.asPath));
         signIn('github', {callbackUrl: "http://localhost:3000"})
     }
 

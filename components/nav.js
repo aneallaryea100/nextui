@@ -37,7 +37,7 @@ function Nav () {
                     <div><Link href={'/gallery'}>Gallery</Link></div>
                     <div><Link href={'/centerofart'}>Center of Art</Link></div>
                     <div className={styles.logoContain}><Link href={'/'} className={styles.logo}>Tribals</Link></div>
-                    <div><Link href={'/'}>Share Hugs</Link></div>
+                    <div><Link href={'/art-fairs'}>Fairs</Link></div>
                     <div><Link href={'/'}>Shop</Link></div>
                     <div><Link href={'/'}>Tribals team</Link></div>
                 </div>
@@ -58,7 +58,7 @@ function Nav () {
                             <div><Link href={'/artists'}>Artist</Link></div>
                             <div><Link href={'/gallery'}>Gallery</Link></div>
                             <div><Link href={'/centerofart'}>Center of Art</Link></div>
-                            <div><Link href={'/'}>Share Hugs</Link></div>
+                            <div><Link href={'/art-fairs'}>Fairs</Link></div>
                             <div className='cursor-pointer'><Link href={'/'}>Shop</Link></div>
                             <div><Link href={'/'}>Tribals team</Link></div>
                             <hr />
