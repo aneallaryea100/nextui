@@ -16,7 +16,7 @@ function OrderDetails({artworks, session}) {
     };
 
     if (!session) {
-      return <div>Loading...</div>; // or some fallback UI
+      return <div><h1 className="font-bold text-4xl">Sorry, You need to be logged in to access this page</h1></div>; // or some fallback UI
     }
 
   return (
@@ -66,22 +66,6 @@ OrderDetails.getLayout = function PageLayout(page) {
 }
 
 
-// export async function getStaticProps({ params }) {
-//     const ordername = params.ordername;
-//     const artworks = ArtCenterSectionTwoArtWorksData.find(
-//       (art) => art.name === ordername
-//     );
-  
-//     return { props: { artworks } };
-//   }
-
-//   export async function getStaticPaths() {
-//     const paths = ArtCenterSectionTwoArtWorksData.map((artwork) => ({
-//       params: { ordername: artwork.name },
-//     }));
-  
-//     return { paths, fallback: false };
-//   }
 
   export async function getServerSideProps(context){
     const session = await getSession(context)
