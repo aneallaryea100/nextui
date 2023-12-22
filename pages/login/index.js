@@ -10,11 +10,16 @@ import { signIn } from "next-auth/react";
 import { useFormik } from 'formik';
 import { useRouter } from 'next/router';
 import { login_validate } from '../../lib/validate'
-import { HiOutlineFingerPrint } from "react-icons/hi";
+import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+// import { useDispatch, useSelector } from 'react-redux';
+// import { selectPreviousPage } from '@redux/slices/previousPageSlice';
+// import { setPreviousPage } from '@redux/slices/previousPageSlice';
 
 function Login() {
     const [show, setShow] = useState(false)
     const router = useRouter();
+    //const dispatch = useDispatch();
+    //const previousPage = useSelector(selectPreviousPage);
     const formik = useFormik({
         initialValues: {
             userName:'',
@@ -35,17 +40,30 @@ function Login() {
         })
 
         if(status.ok) router.push(status.url)
-        console.log('status', status)
-    console.log(values);
+
+         //     if(status.ok) {
+    //         if (previousPage) {
+    //             router.push(previousPage);
+    //             dispatch(setPreviousPage(null)); // Reset previousPage after redirection
+    //         } else {
+    //             router.push(status.url);
+    //         }
+    //     }
+    //     console.log('status', status);
+    //     console.log(values);
+    //
     }
+ 
 
     //google handler function
     async function handleGoogleSignin(){
+        //dispatch(setPreviousPage(router.asPath));
         signIn('google', {callbackUrl: "http://localhost:3000"})
     }
 
     //github handler function
     async function handleGithubSignin(){
+        //dispatch(setPreviousPage(router.asPath));
         signIn('github', {callbackUrl: "http://localhost:3000"})
     }
 
@@ -66,8 +84,9 @@ function Login() {
                         <p>Not a member yet? <Link href={'/register'} className={styles.register}>Register Now</Link></p>
                     </div>
                     <form onSubmit={formik.handleSubmit} className={styles.formContainer}>
-                    <div className={styles.formControls}>
+                    <div className=''>
                         <input
+                        className="p-2 border-none rounded-lg outline-none w-full bg-transparent"
                         type='text'
                         name='userName'
                         placeholder='Enter Username'
@@ -75,36 +94,39 @@ function Login() {
                         />
                     </div>
                     {formik.errors.userName && formik.touched.userName?<span>{formik.errors.userName}</span>: <></>}
-                    <div className={styles.formControls}>
+                    <div className='flex'>
                         <input
+                        className="p-2 border-none rounded-lg outline-none w-full bg-transparent"
                         type={`${show ? "text" : "password"}`}
                         name='password'
                         placeholder='Enter Password'
                         {...formik.getFieldProps('password')}
                         />
-                        <span className={styles.passwordIcon} onClick={()=> setShow(!show)}><HiOutlineFingerPrint size={30} color='gray' style={{ position: 'absolute', marginLeft: '-2rem', marginTop: '0.8rem', cursor: 'pointer' }}/></span>
+                        <span className='-ml-6 flex items-center justify-center w-6 text-gray-600 text-2xl' onClick={()=> setShow(!show)}>{show ? <AiFillEyeInvisible /> : <AiFillEye />}</span>
                     </div>
                     {formik.errors.password && formik.touched.password?<span>{formik.errors.password}</span>: <></>}
-                    <div className={styles.formControls}>
-                        <button type="submit" className={styles.loginbtn}>Login</button>
-                    </div>
+                    <span className='bg-dark rounded-lg outline-none w-full text-white font-meduim'>
+                        <button type="submit" className='p-2 border-none rounded-lg outline-none w-full bg-blue-900'>Login</button>
+                    </span>
+                        
+                
 
-                    <p className={styles.paragraphreset}><Link href={'/resetpassword'} className={styles.forgotpassword}>Forgot password?</Link></p>
+                    <p className={styles.paragraphreset}><Link href={'#'} className={styles.forgotpassword}>Forgot password?</Link></p>
                     </form>
 
                     <div className={styles.separateline}><span className={styles.lineseparate}></span><span>Or</span><span className={styles.lineseparate}></span></div>
 
                     <div className={styles.optionsignin}>
-                        <div className={styles.optionControls}>
-                            <button type="submit" onClick={handleGoogleSignin}>Sign in with Google <Image src={'/images/google.svg'} width={20} height={20} alt='googlesvg'></Image></button>
+                        <div className='bg-dark text-white rounded-lg'>
+                            <button type="submit" onClick={handleGoogleSignin} className='bg-blue-800 w-full border-none outline-none p-2 rounded-lg cursor-pointer flex items-center justify-evenly text-white text-base'>Sign in with Google <Image src={'/images/google.svg'} width={20} height={20} alt='googlesvg'></Image></button>
                         </div>
-                        <div className={styles.optionControls}>
-                            <button type="submit" onClick={handleGithubSignin}>Sign in with Github <Image src={'/images/github_white.svg'} width={25} height={25} alt='githubsvg'></Image></button>
+                        <div className='bg-dark text-white rounded-lg my-2'>
+                            <button type="submit" onClick={handleGithubSignin} className='bg-blue-800 w-full border-none outline-none p-2 rounded-lg cursor-pointer flex items-center justify-evenly text-white text-base'>Sign in with Github <Image src={'/images/github_white.svg'} width={25} height={25} alt='githubsvg'></Image></button>
                         </div>
                     </div>
 
-                    <div className={styles.tribalMarks}>
-                        <p className={styles.text}>All rights reserved. Tribals &copy; 2023</p>
+                    <div className=''>
+                        <p className='font-medium text-gray-900'>All rights reserved. Tribals &copy; 2023</p>
                     </div>
                     
                 </div>
@@ -114,3 +136,9 @@ function Login() {
 }
 
 export default Login
+
+Login.getLayout = function PageLayout(page) {
+    return (
+        <>{page}</>
+    )
+}

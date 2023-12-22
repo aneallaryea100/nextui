@@ -1,0 +1,18 @@
+@media screen and (min-width: 1024px){
+    .artcenteronewrapper {
+        flex-wrap: nowrap !important;
+    }
+}
+
+.artcenteronewrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 2rem;
+    gap: 1rem;
+}
+
+.artcenteronecontainer {
+    width: 45%;
+}

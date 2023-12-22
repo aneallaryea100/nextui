@@ -1,0 +1,88 @@
+const cardArtist = [
+    {
+        id: "01",
+        name: "Jacob Hölferlin",
+        location: "Germany, b.1991",
+        image: "https://images.unsplash.com/photo-1573076195749-03b8d70940c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzN8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        follow: false, 
+    },
+    {
+        id: "02",
+        name: "Benji Martinez",
+        location: "Peru, b.1992",
+        image: "https://images.unsplash.com/photo-1599192148293-d315c45e7c86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        follow: false,
+      },
+      {
+        id: "03",
+        name: "Hala Al-Asadi",
+        location: "Turkey, b.1993",
+        image: "https://images.unsplash.com/photo-1586038314760-81ed2ee90326?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        follow: false,
+      },
+      {
+        id: "04",
+        name: "Vlad Gorshkov",
+        location: "USA, b.1994",
+        image: "https://images.unsplash.com/photo-1585950483336-8d59d18e0ffe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        follow: false,
+      },
+      {
+        id: "05",
+        name: "Simona Sergi",
+        location: "Italy, b.1992",
+        image: "https://images.unsplash.com/photo-1608371945786-d47d3cdd31da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        follow: false,
+      },
+      {
+        id: "06",
+        name: "Roberto Contreras",
+        location: "Poland, b.1989",
+        image: "https://images.unsplash.com/photo-1590342823852-2ab98729f250?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        follow: false,
+      },
+      {
+        id: "07",
+        name: "Juliette Contin",
+        location: "Germany, b.1997",
+        image: "https://images.unsplash.com/photo-1605999081451-4436bf1d0d88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        follow: false,
+      },
+      {
+        id: "08",
+        name: "Dan V",
+        location: "Romania, b.1995",
+        image: "https://images.unsplash.com/photo-1576421923908-1e633e53d809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        follow: false,
+      },
+      {
+        id: "09",
+        name: "Martino Pietropoli",
+        location: "Italy, b.1982",
+        image: "https://images.unsplash.com/photo-1522878308970-972ec5eedc0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        follow: false,
+      },
+      {
+        id: "10",
+        name: "Ryan Stefan",
+        location: "Ghanaian, b.1992",
+        image: "https://images.unsplash.com/photo-1512540452972-baac55d40ef1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        follow: false,
+      },
+      {
+        id: "11",
+        name: "Ashley Byrd",
+        location: "Ghanaian, b.1992",
+        image: "https://images.unsplash.com/photo-1606075277198-b0942900e36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        follow: false,
+      },
+      {
+        id: "12",
+        name: "Adrien Olichon",
+        location: "Ghanaian, b.1992",
+        image: "https://images.unsplash.com/photo-1549191044-75e660cc2bd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        follow: false,
+      },
+]
+
+export default cardArtist;

@@ -2,63 +2,35 @@ import { Session } from "next-auth"
 import Link from "next/link"
 import { useState } from "react"
 import Head from "next/head";
-import { getSession, useSession, signOut } from "next-auth/react";
-import GuestPage from "@components/guest";
-import UserPage from "@components/authorizeUserPage";
-import Nav from "@components/nav";
+//import { getSession, useSession, signOut } from "next-auth/react";
+import StoryTales from "@components/storyTales";
+import Featured from "@components/featuredArtist";
+import GalleryFeatured from "@components/galleryExhibit";
+import FollowArtist from "@components/followArtist";
+import BlogDisplay from "@components/blogDisplay";
+import Carouzels3 from "@components/carouselReact/Carouzels3";
 
 
 function Home() {
+ // const {data: session} = useSession();
 
-  const {data: session} = useSession();
-  console.log("checck the session", session)
-
-  function handleSignOut(){
-    signOut()
-  }
+  // function handleSignOut(){
+  //   signOut()
+  // }
 
   return (
     <div className="homecontainer">
       <Head>
-        <title>Home Page</title>
+        <title>Tribals</title>
       </Head> 
-      <Nav />
-      {session ? User({ session, handleSignOut }) : Guest()}
+      
+      <StoryTales />
+      <Featured />
+      <GalleryFeatured />
+      <BlogDisplay />
+      <FollowArtist />
     </div>
   )
-}
-
-//Guest
-
-function Guest () {
-  return (
-    <GuestPage />
-  )
-}
-
-// Authorize User
-
-function User ({ session, handleSignOut }) {
-  return (
-    <UserPage session={session} handleSignOut={handleSignOut} />
-  )
-}
-
-export async function getServerSideProps({ req }){
-  const session = await getSession({ req })
-
-  if(!session){
-    return {
-      redirect : {
-        destination: '/login',
-        permanent: false
-      }
-    }
-  }
-
-  return {
-    props: { session }
-  }
 }
 
 export default Home

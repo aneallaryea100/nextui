@@ -12,12 +12,33 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@reduxjs/toolkit": "^1.9.6",
+    "@trendyol-js/react-carousel": "^3.0.2",
+    "bootstrap": "^5.3.1",
+    "embla-carousel-autoplay": "^8.0.0-rc14",
+    "embla-carousel-react": "^8.0.0-rc14",
     "formik": "^2.4.2",
+    "jquery": "^3.7.0",
     "js-cookie": "^3.0.5",
     "next": "13.4.4",
     "next-auth": "^4.22.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.9.0"
+    "next-redux-wrapper": "^8.1.0",
+    "owl.carousel": "^2.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
+    "react-redux": "^8.1.3",
+    "react-router-dom": "^6.20.0",
+    "redux": "^4.2.1",
+    "sharp": "^0.32.6",
+    "slugify": "^1.6.6",
+    "styled-components": "^6.0.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
   }
 }

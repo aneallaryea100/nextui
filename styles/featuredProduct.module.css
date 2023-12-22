@@ -1,0 +1,64 @@
+.darkbackground {
+    background-color: #f7f7f701;
+  }
+
+  
+
+.itemBox {
+    background-color: #fff;
+    width: 15rem;
+    height: 20rem;
+    margin: 0.9rem 0.5rem ;
+}
+
+.itemImageBox {
+    width: 15rem;
+    height: 13rem;
+}
+
+.itemImageBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.featuredHeadtext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 0.2rem;
+}
+
+.featuredHeadtext span {
+    font-weight: 900;
+    font-variant: unset;
+    font-size: 1.5rem;
+    font-style: bold;
+    color: rgb(98, 87, 75);
+}
+
+.featuredGalsubtext {
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(98, 87, 75);
+    font-style: italic;
+}
+
+.featuredGalsubnexttext {
+    font-weight: 400;
+    color: rgb(98, 87, 75);
+    font-style: oblique;
+}
+
+.featuredGalprice {
+    font-weight: 700;
+    color: rgb(98, 87, 75);
+    font-style: unset;
+}
+
+.heartbtn {
+    cursor: pointer;
+}
+
+.heartFilled {
+    color: blueviolet;
+}

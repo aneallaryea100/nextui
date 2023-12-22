@@ -1,0 +1,8 @@
+.centerArtIndexcontainer {
+    margin: 1rem 2rem;
+}
+
+.centerArtIndexcontainer > h1 {
+    font-weight: bold;
+    font-size: 2rem;
+}
