@@ -45,7 +45,7 @@ function Nav () {
                 <div className={styles.navMobile}>
                     <div className={styles.logoContain}><Link href={'/'} className={styles.logo}>Tribals</Link></div>
                     <div className={styles.menuContainer}>
-                        <span onClick={toggleMenu}><CiMenuFries /></span>
+                        <span onClick={toggleMenu} className={styles.hmenu}><CiMenuFries /></span>
                     </div>
                 </div>
                 <MiniNavbar />
@@ -55,21 +55,21 @@ function Nav () {
                     <div className={styles.navbarMobileMenu}>
                         <div className={styles.navbarMobileMenuList}>
                             <span className={styles.closemenu} onClick={toggleMenu}>closebtn</span>
-                            <div><Link href={'/artists'}>Artist</Link></div>
-                            <div><Link href={'/gallery'}>Gallery</Link></div>
-                            <div><Link href={'/centerofart'}>Center of Art</Link></div>
-                            <div><Link href={'/art-fairs'}>Fairs</Link></div>
-                            <div className='cursor-pointer'><Link href={'/'}>Shop</Link></div>
-                            <div><Link href={'/'}>Tribals team</Link></div>
+                            <div><Link href={'/artists'}  onClick={toggleMenu}>Artist</Link></div>
+                            <div><Link href={'/gallery'}  onClick={toggleMenu}>Gallery</Link></div>
+                            <div><Link href={'/centerofart'}  onClick={toggleMenu}>Center of Art</Link></div>
+                            <div><Link href={'/art-fairs'}  onClick={toggleMenu}>Fairs</Link></div>
+                            <div className='cursor-pointer'  onClick={toggleMenu}><Link href={'/'}>Shop</Link></div>
+                            <div><Link href={'/'}  onClick={toggleMenu}>Tribals team</Link></div>
                             <hr />
-                            <div><Link href={'/'}>Buy</Link></div>
-                            <div><Link href={'/sell'}>Sell</Link></div>
-                            <div><Link href={'/'}>Editorial</Link></div>
+                            <div><Link href={'/'}  onClick={toggleMenu}>Buy</Link></div>
+                            <div><Link href={'/sell'}  onClick={toggleMenu}>Sell</Link></div>
+                            <div><Link href={'/'}  onClick={toggleMenu}>Editorial</Link></div>
                             <hr />
-                            <div><Link href={'/'}>Inbox</Link></div>
-                            <div><Link href={'/'}>Settings</Link></div>
-                            <div><Link href={'/'}>Get the app</Link></div>
-                            <div><Link href={'/'}>Log out</Link></div>
+                            <div><Link href={'/'}  onClick={toggleMenu}>Inbox</Link></div>
+                            <div><Link href={'/'}  onClick={toggleMenu}>Settings</Link></div>
+                            <div><Link href={'/'}  onClick={toggleMenu}>Get the app</Link></div>
+                            <div><Link href={'/'}  onClick={toggleMenu}>Log out</Link></div>
                             </div>
                     </div>
                 )
