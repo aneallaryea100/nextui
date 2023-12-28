@@ -94,15 +94,15 @@
 
     .navbarMobileMenu {
         background-color: transparent;
-        position: absolute;
-        z-index: 1000;
-        width: 100dvw;
-        height: 100dvh;
+        /* position: absolute; */
+        /* z-index: 5000; */
+        /* width: 100dvw;
+        height: 100dvh; */
         text-align: right;
         display: flex;
         justify-content: flex-end;
         overflow-y: scroll;
-        bottom: 0;
+        /* bottom: 0; */
     }
 
     .navbarMobileMenuList {
