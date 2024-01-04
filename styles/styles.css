@@ -18,6 +18,7 @@ body {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       padding-top: 1rem;
+      padding-bottom: 5rem;
       overscroll-behavior-x: none;
   }
 
