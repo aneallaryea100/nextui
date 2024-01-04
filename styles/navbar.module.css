@@ -88,37 +88,60 @@
         position: fixed;
         z-index: 999;
         width: 100%;
-        top: 0;
+        bottom: 0;
         padding: 0.5rem 0.9rem;
     }
 
     .navbarMobileMenu {
-        background-color: transparent;
+        /* background-color: transparent; */
         /* position: absolute; */
         /* z-index: 5000; */
         /* width: 100dvw;
         height: 100dvh; */
-        text-align: right;
+        /* text-align: right;
         display: flex;
         justify-content: flex-end;
-        overflow-y: scroll;
+        overflow-y: scroll; */
         /* bottom: 0; */
+        /* background-color: #c21854;
+        z-index: 10;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%; */
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 999;
+        margin-bottom:4rem;
+        width: 100%;
     }
 
     .navbarMobileMenuList {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-        width: 50%;
-        height: 100%;
-        background-color: #ecf3ef;
-        align-self: flex-end;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* flex-wrap: wrap;
+        align-items: center; */
+        /* gap: 1.5rem; */
+        /* width: 100%;
+        background-color: #076530; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+        background-color: #0c0b0b;
+        color: #fff;
+    }
+
+    .navbarMobileMenuList div {
+        text-align: center;
     }
 
     .closemenu {
-        width: 100%;
         padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        background: #000;
+        font-size: 2rem;
     }
   
     .logo {
@@ -136,6 +159,14 @@
     .hmenu {
         font-size: 2rem;
         font-weight: bolder;
+    }
+
+    .navbarMobileMenuClose{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #000;
+        color: #fff;
     }
 
  

@@ -3,26 +3,27 @@ import Link from "next/link";
 import styles from '@styles/navbar.module.css'
 import MiniNavbar from "./miniNav";
 import { CiMenuFries } from "react-icons/ci";
+import { AiOutlineClose } from "react-icons/ai";
 
 function Nav () {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
-          if (isMenuOpen) {
-            document.body.style.overflow = 'hidden';
-          } else {
-            document.body.style.overflow = 'auto';
-          }
-        };
+        // const handleScroll = () => {
+        //   if (isMenuOpen) {
+        //     document.body.style.overflow = 'hidden';
+        //   } else {
+        //     document.body.style.overflow = 'auto';
+        //   }
+        // };
     
-        handleScroll(); // Set initial scroll behavior
+        // handleScroll(); // Set initial scroll behavior
     
-        window.addEventListener('scroll', handleScroll);
+        // window.addEventListener('scroll', handleScroll);
     
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
+        // return () => {
+        //   window.removeEventListener('scroll', handleScroll);
+        // };
       }, [isMenuOpen]);
 
     const toggleMenu = () => {
@@ -53,22 +54,23 @@ function Nav () {
             {
                 isMenuOpen && (
                     <div className={styles.navbarMobileMenu}>
+                        <div className={styles.navbarMobileMenuClose}>
+                             <span className={styles.closemenu} onClick={toggleMenu}><AiOutlineClose /></span>
+                        </div>
+                       
                         <div className={styles.navbarMobileMenuList}>
-                            <span className={styles.closemenu} onClick={toggleMenu}>closebtn</span>
                             <div><Link href={'/artists'}  onClick={toggleMenu}>Artist</Link></div>
                             <div><Link href={'/gallery'}  onClick={toggleMenu}>Gallery</Link></div>
                             <div><Link href={'/centerofart'}  onClick={toggleMenu}>Center of Art</Link></div>
                             <div><Link href={'/art-fairs'}  onClick={toggleMenu}>Fairs</Link></div>
                             <div className='cursor-pointer'  onClick={toggleMenu}><Link href={'/'}>Shop</Link></div>
                             <div><Link href={'/'}  onClick={toggleMenu}>Tribals team</Link></div>
-                            <hr />
                             <div><Link href={'/'}  onClick={toggleMenu}>Buy</Link></div>
                             <div><Link href={'/sell'}  onClick={toggleMenu}>Sell</Link></div>
                             <div><Link href={'/'}  onClick={toggleMenu}>Editorial</Link></div>
-                            <hr />
                             <div><Link href={'/'}  onClick={toggleMenu}>Inbox</Link></div>
                             <div><Link href={'/'}  onClick={toggleMenu}>Settings</Link></div>
-                            <div><Link href={'/'}  onClick={toggleMenu}>Get the app</Link></div>
+                            {/* <div><Link href={'/'}  onClick={toggleMenu}>Get the app</Link></div> */}
                             <div><Link href={'/'}  onClick={toggleMenu}>Log out</Link></div>
                             </div>
                     </div>

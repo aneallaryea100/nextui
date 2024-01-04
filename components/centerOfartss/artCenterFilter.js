@@ -14,11 +14,11 @@ function classNames(...classes) {
 function ArtCenterFilter({artcenterartworks}) {
   return (
     <div className='wrapperArtCenterFilter mt-5 mx-5'>
-      <div className="navbarArtcenterFilter md:flex justify-between">
+      <div className="navbarArtcenterFilter flex justify-between">
         <div className="navbarArtcenterFilter1 md:flex justify-between items-center w-2/5">
             <span className='border-1 flex items-center justify-evenly border-gray-400 rounded-full px-3 text-sm font-semibold text-gray-900 hover:bg-gray-50 cursor-pointer'><LuSettings2 /> <span className='break-keep mx-1'>All Filter</span></span>
             {/* rarity */}
-            <Menu as="div" className="relative inline-block text-left">
+            <Menu as="div" className="hidden md:relative md:inline-block text-left">
                 <div>
                   <Menu.Button className="inline-flex w-full justify-center border-1 border-gray-400 gap-x-1.5 rounded-full bg-white px-3 text-sm font-semibold text-gray-900   hover:bg-gray-50">
                     Rarity
@@ -112,7 +112,7 @@ function ArtCenterFilter({artcenterartworks}) {
                 </Transition>
             </Menu>
             {/* Medium */}
-            <Menu as="div" className="relative inline-block text-left">
+            <Menu as="div" className="hidden md:relative md:inline-block text-left">
                 <div>
                   <Menu.Button className="inline-flex w-full justify-center border-1 border-gray-400 gap-x-1.5 rounded-full bg-white px-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">
                     Medium
@@ -200,7 +200,7 @@ function ArtCenterFilter({artcenterartworks}) {
                 </Transition>
             </Menu>
             {/* price range */}
-            <Menu as="div" className="relative inline-block text-left">
+            <Menu as="div" className="hidden md:relative md:inline-block text-left">
                 <div>
                   <Menu.Button className="inline-flex w-full justify-center border-1 border-gray-400 gap-x-1.5 rounded-full bg-white px-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">
                     Price range
