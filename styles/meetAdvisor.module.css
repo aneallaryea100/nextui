@@ -70,7 +70,8 @@
 .advisorBox1 {
     background-color: lightgoldenrodyellow;
     width: 100%;
-    height: 1040px;
+    /* height: 1040px; */
+    height: 19rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,6 +100,7 @@
     background-image: url('/images/artsyimage.webp');
     background-position: contain;
     width: 100%;
-    height: 1600px;
+    /* height: 1600px; */
+    height: 20rem;
 }
 
