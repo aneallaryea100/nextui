@@ -67,7 +67,7 @@ function Nav () {
                             <div><Link href={'/'}  onClick={toggleMenu}>Tribals team</Link></div>
                             <div><Link href={'/'}  onClick={toggleMenu}>Buy</Link></div>
                             <div><Link href={'/sell'}  onClick={toggleMenu}>Sell</Link></div>
-                            <div><Link href={'/'}  onClick={toggleMenu}>Editorial</Link></div>
+                            <div><Link href={'/articles'}  onClick={toggleMenu}>Editorial</Link></div>
                             <div><Link href={'/'}  onClick={toggleMenu}>Inbox</Link></div>
                             <div><Link href={'/'}  onClick={toggleMenu}>Settings</Link></div>
                             {/* <div><Link href={'/'}  onClick={toggleMenu}>Get the app</Link></div> */}

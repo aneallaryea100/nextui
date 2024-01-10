@@ -1,5 +1,6 @@
 import Image from "next/image"
 import BlogData from "@localDatabase/Data/editorialBlog"
+import Link from "next/link"
 
 function BlogDisplay() {
   return (
@@ -23,7 +24,8 @@ function BlogDisplay() {
         <div className='blogDisplayContentleftEdit w-full grid grid-cols-1 grid-rows-1 gap-y-5 gap-x-3 md:grid-cols-2'>
             {
                 BlogData.map((data) => (
-                    <div className='blogDisplayContentleftBox w-full ' key={data.id}>
+                    <Link href={`/articles/${data.name}`}>
+                        <div className='blogDisplayContentleftBox w-full ' key={data.id}>
                         <div className='blogDisplayContentleftImageBox h-64'>
                             <img
                              src={data.imageSrc}
@@ -38,6 +40,8 @@ function BlogDisplay() {
                             <span className='font-semibold block text-gray-500'>{data.date}</span>
                         </div>
                     </div>
+                    </Link>
+                    
                 ))
             }
            
