@@ -1,0 +1,27 @@
+{
+    "name": "Tribals",
+    "short_name": "TRIBALS App",
+    "icons": [
+      {
+        "src": "/tutut.jpg",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/tt3.jpg",
+        "sizes": "384x384",
+        "type": "image/png"
+      },
+      {
+        "src": "/tt1.jpg",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#355C7D",
+    "background_color": "#80ff80",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+  }
