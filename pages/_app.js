@@ -6,6 +6,16 @@ import './globals.css'
 import { ReduxProvider } from '@redux/provider';
 
 
+export const metadata = {
+  manifest: "/manifest.json",
+  title: 'TRIBALS',
+  description: 'This is a tribals app',
+}
+
+export const viewport = {
+  themeColor: "#355C7D",
+};
+
 
 function MyApp({Component, pageProps}){
 

@@ -3,27 +3,21 @@
 
 const webpack = require("webpack");
 
-module.exports = {
+const withPWA = require("@ducanh2912/next-pwa").default({
+  dest: "public",
+  cacheOnFrontendNav: true,
+  aggressiveFrontEndNavCaching: true,
+  reloadOnOnline: true,
+  swcMinify: true,
+  disable: false,
+  workboxOptions: {
+    disableDevLogs: true,
+  },
+});
+
+module.exports = withPWA({
   images: {
     domains: ['source.unsplash.com'], // Add the domain(s) you want to allow here
   },
-    // images: {
-    //   remotePatterns: [
-    //     {
-    //       protocol: 'https',
-    //       hostname: 'assets.example.com',
-    //       port: '',
-    //       pathname: '/account123/**',
-    //     },
-    //   ],
-    // },
-    // async redirects() {
-    //   return [
-    //     {
-    //       source: '/centerofart/:relatedWorkTitle',
-    //       destination: '/centerofart/[centerofartname]',
-    //       permanent: true,
-    //     },
-    //   ];
-    // },
-  }
+
+  })
